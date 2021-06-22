@@ -7,7 +7,7 @@
 body {
     /* 原本的body元素帶有原始的margin 8px 這裡把它設為0 不然不會滿版  */
     margin: 0px;
-    
+
 }
 
 h1,
@@ -28,13 +28,13 @@ header .Container {
 header .row {
     /* 文字置中 */
     text-align: center;
-    
+
 }
 
 header .Container h1 {
     /* h1的標題上下空間太大導致會有空白空間 */
     /*padding控制內部距離大小  不能用margin 否則會超出父div*/
-    margin: 0px;
+    margin : 0px;
     padding: 30px;
 }
 
@@ -46,8 +46,8 @@ header .Container h2 {
 header .navigation {
     /* text-align: center; */
     /* 內部距離0  外部距離 */
-    margin: 0px;
-    padding: 1px 0px;
+    margin          : 0px;
+    padding         : 1px 0px;
     background-color: rgb(255, 183, 88);
 
 
@@ -56,15 +56,15 @@ header .navigation {
 header .navigation li {
     /* 風格 none , display: inline 讓文字在同一行呈現 , 外部距離10px */
     list-style: none;
-    display: inline;
-    margin: 0px 20px;
+    display   : inline;
+    margin    : 0px 20px;
 
 }
 
 header .navigation a {
-    font-size: 22px;
+    font-size      : 22px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color          : rgb(255, 255, 255);
 }
 
 header .navigation a:hover {
@@ -84,17 +84,17 @@ header .navigation a:hover {
 #Second p {
     /* 外部距離0 內部距離 上下20 左右0  字體大小18 置中 */
 
-    margin: 0px;
-    padding: 20px 0px;
-    font-size: 18px;
+    margin    : 0px;
+    padding   : 20px 0px;
+    font-size : 18px;
     text-align: center;
-    
+
 }
 
 #Second .row2 {
-   text-align: center;  
-    padding: 20px 0px;
-    
+    text-align: center;
+    padding   : 20px 0px;
+
 }
 
 
@@ -118,27 +118,19 @@ footer {
     background-color: coral;
 }
 
-footer .container{
+footer .container {
     padding: 20px 0px;
 }
 
 
-footer .container p{
-    margin: 0px;
-    padding: 0px;
+footer .container p {
+    margin    : 0px;
+    padding   : 0px;
     text-align: center;
-    font-size: 10px;
-    
+    font-size : 10px;
+
 
 
 }
 
 /* 以上頁尾 */
-
-
-
-
-
-
-
-
