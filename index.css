@@ -1,0 +1,261 @@
+body {
+    margin : 0px;
+    padding: 0px;
+}
+
+h2 {
+    text-align: center;
+    margin    : 0px;
+    padding   : 32px 16px;
+    color     : rgb(226, 0, 0);
+
+}
+
+h3 {
+    text-align    : center;
+    margin        : 0px;
+    color         : #0DA6C4;
+    padding-bottom: 30px;
+}
+
+header .logo {
+    text-align: center;
+    padding   : 10px 0px;
+}
+
+header nav {
+    text-align: center;
+    padding   : 10px 0px;
+
+}
+
+header nav a {
+    color          : rgb(225, 55, 55);
+    padding        : 0px 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: skyblue;
+}
+
+header .headerimage {
+    /* 背景顏色 置中 */
+    background-color: rgb(238, 238, 238);
+    text-align      : center;
+}
+
+header .headerimage img {
+    /* 讓圖片配合網頁視窗大小 */
+    display: block;
+    width  : 100%;
+    height : 100%;
+}
+
+/* 以上header */
+
+#news .inner {
+    width         : 800px;
+    margin        : 0px auto;
+    padding-bottom: 50px;
+}
+
+
+
+#news table {
+    /* 表格合併為單一邊框 */
+    border-collapse: collapse;
+    width          : 100%;
+
+
+}
+
+#news th,
+td {
+    /* 表格框線 底線 框線樣式 粗細 顏色*/
+    border-bottom : solid 1px #cccccc;
+    padding       : 10px;
+    text-align    : left;
+    /* 該文字垂直對其最高位置 */
+    vertical-align: top;
+
+}
+
+#news a {
+    color          : rgb(225, 55, 55);
+    /* 超連結文字底線 不要 */
+    text-decoration: none;
+}
+
+#news a:hover {
+    color: skyblue;
+}
+
+
+
+/* 以上表格 */
+
+
+
+#basic_concepts .container {
+    background-color: rgb(221, 239, 255);
+
+}
+
+#basic_concepts .row {
+
+    width : 900px;
+    margin: 0px auto;
+
+
+}
+
+
+#basic_concepts li {
+
+    padding-bottom: 35px;
+
+}
+
+
+#basic_concepts .introduction img {
+
+    float: right;
+
+}
+
+
+
+/* 以上基礎教學 */
+
+
+
+#basic_concepts2 .row {
+
+    width : 900px;
+    margin: 0px auto;
+
+
+}
+
+#basic_concepts2 .youtubevideo {
+    width        : 560px;
+    height       : 280px;
+    float        : left;
+    padding-right: 30px;
+
+}
+
+#basic_concepts2 .youtubevideo iframe {
+    width : 100%;
+    height: 100%;
+
+}
+
+#basic_concepts2 p {
+    line-height: 2em;
+}
+
+
+
+/* 以上css教學影片 */
+
+
+
+#basic_concepts3 .container {
+    background-color: rgb(221, 239, 255);
+
+}
+
+#basic_concepts3 .row {
+
+    width : 900px;
+    margin: 0px auto;
+
+
+}
+
+#basic_concepts3 .row img {
+    float      : right;
+    margin-left: 50px;
+
+}
+
+#basic_concepts3 p {
+    margin        : 0px;
+    padding       : 0px 0px;
+    padding-bottom: 25px;
+    line-height   : 2em;
+}
+
+
+
+/* 以上認識html */
+
+
+
+#basic_concepts4 .row {
+    width : 900px;
+    margin: 0px auto;
+}
+
+#basic_concepts4 .row img {
+    float      : right;
+    margin-left: 50px;
+
+}
+
+#basic_concepts4 p {
+    margin        : 0px;
+    padding       : 0px 0px;
+    padding-bottom: 25px;
+    line-height   : 25px;
+}
+
+
+
+/* 以上認識css */
+
+
+
+footer .goback {
+    text-align: right;
+    margin    : 10px 0px;
+}
+
+footer .goback a {
+    color          : skyblue;
+    text-decoration: none;
+}
+
+footer .goback a:hover {
+    color          : rgb(225, 55, 55);
+    
+}
+
+footer .statement {
+    border-top: solid 5px #CA5D87;
+}
+
+footer .statement p {
+    text-align: center;
+    margin    : 20px;
+    font-size : 12px;
+}
+
+footer .image_source {
+    text-align: center;
+    margin    : 20px 0px;
+    font-size : 14px;
+}
+
+footer .image_source a {
+    color          : skyblue;
+    text-decoration: none;
+
+}
+
+footer .image_source a:hover {
+    color          : rgb(225, 55, 55);
+    
+}
