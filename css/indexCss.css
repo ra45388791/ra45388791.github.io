@@ -1,8 +1,14 @@
-/* html {
-    margin: 0px;
-    padding: 0px;
-
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     /* 原本的body元素帶有原始的margin 8px 這裡把它設為0 不然不會滿版  */
@@ -78,7 +84,7 @@ header .navigation a:hover {
 
 #Second .container {
     background-color: rgb(255, 213, 166);
-    
+
 }
 
 #Second p {
