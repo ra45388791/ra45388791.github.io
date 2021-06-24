@@ -57,10 +57,14 @@ header .headerimage img {
   padding-bottom: 50px;
 }
 
+#news .box {
+  padding: 0px 458px;
+}
+
 #news table {
   /* 表格合併為單一邊框 */
   border-collapse: collapse;
-  width: 100%;
+  width: 987px;
 }
 
 #news th,
@@ -255,6 +259,17 @@ footer .image_source a:hover {
     color: rgb(226, 0, 0);
   }
 
+  #news .box {
+    width: 768px;
+    padding: 0px 134px
+  }
+
+  #news table {
+    /* 表格合併為單一邊框 */
+    
+    width: 500px;
+  }
+
   /* 以上 表格導航欄 */
 
   #basic_concepts {
@@ -387,14 +402,9 @@ footer .image_source a:hover {
     height: 100%;
   }
 
-
   /* 以上認識css */
 
-
-    footer .goback{
-        padding-right: 20px;
-    }
-
-
-
+  footer .goback {
+    padding-right: 20px;
+  }
 }
