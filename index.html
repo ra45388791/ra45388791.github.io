@@ -2,184 +2,2106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>練習2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7a89e9dff6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <!-- 上層導航區 -->
     <header id="top">
-        <div class="container">
-            <div class="row">
-                <div class="logo">
-                    <img src="image/logo.png" alt="初階筆記logo" />
-                </div>
+        <div class="container_top1">
+            <div class="box_top1">
 
-                <div>
-                    <nav>
-                        <a href="#news">最新消息</a>
-                        <a href="#basic_concepts">基本概念</a>
-                        <a href="#basic_concepts2">教學影片</a>
-                        <a href="#basic_concepts3">認識HTML</a>
-                        <a href="#basic_concepts4">認識CSS</a>
-                    </nav>
-                </div>
+                <div class="header_edit_left">
 
-                <main>
-                    <div class="headerimage">
-                        <img src="image/background.jpg" alt="主視覺圖" />
-                    </div>
-                </main>
+                    <a href="#">歡迎訪問看漫畫</a>
+
+                    <a href="#">切換簡體</a>
+
+                    <a href="#">移動版</a>
+
+                    <a href="#">鏡像站</a>
+
+
+                </div>
+                <div class="header_edit_right">
+                    <a href="#">登錄</a>
+                    <a href="#">註冊</a>
+                    <a href="#">我的觀看紀錄</a>
+                </div>
             </div>
         </div>
+
+        <div class="container_top2">
+
+            <div class="box_top2">
+                <div class="logo">
+                    <h2>
+                        <img src="https://fakeimg.pl/200x60/" alt="logo">
+                    </h2>
+                </div>
+
+                <div class="inputer">
+                    <div class="search">
+                        <input type="text" placeholder="輸入你要搜索的漫畫名稱">
+                        <button>搜尋</button>
+                    </div>
+                </div>
+
+                <div class="edit_html">
+                    <a href="#">設為桌面圖標</a>
+                    <a href="#">收藏看漫畫</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="container_nav">
+            <div class="box_top3">
+                <div class="item_head">
+                    <h2>漫畫大全導航</h2>
+                </div>
+
+                <div class="item_first">
+                    <a href="#">首頁</a>
+                </div>
+
+                <ul>
+                    <li><a href="#">最新更新</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">連載漫畫</a></li>
+                    <li><a href="#">完結漫畫</a></li>
+                    <li><a href="#">漫畫大全</a></li>
+                    <li><a href="#">漫畫家</a></li>
+                </ul>
+
+                <div class="item_final">
+                    <a href="#">漫畫隨心看</a>
+                </div>
+
+                <div class="item_both"></div>
+            </div>
+        </nav>
     </header>
 
-    <article id="news">
-        <div class="inner">
-            <h2>最新消息</h2>
-            <div class="box">
-                <table>
-                    <tr>
-                        <th>2021.6.24</th>
-                        <td><a href="#basic_concepts2">新增教學影片</a></td>
-                    </tr>
-                    <tr>
-                        <th>2021.6.23</th>
-                        <td>網頁設計基本概念、html5與css語法解析</td>
-                    </tr>
-                    <tr>
-                        <th>2021.6.22</th>
-                        <td>網頁設計初階網站架設</td>
-                    </tr>
-                </table>
+    <!-- 漫畫更新區 -->
+    <section id="top_update">
+        <div class="container">
+            <div class="comic_update_header">
+                <div class="row_h3">
+                    <h3>熱門漫畫最新更新</h3>
+                </div>
+                <div class="row_text">
+                    <p>最近有<span> # </span>部漫畫更新，頁面更新於 <span>2021-6-28 08:46</span> (UTC+08:00)</p>
+                    <a href="#">更多更新</a>
+                </div>
             </div>
 
+            <div class="comic_update">
+                <div class="row">
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+                    <div class="comic_image">
+                        <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                        <p class="page">第#話</p>
+                        <p class="min">#分鐘</p>
+                        <p class="name">漫畫名子</p>
+                    </div>
+
+                </div>
+                <div class="bottom_button">
+                    <p>
+                        (o o o o o)
+                    </p>
+                </div>
+
+                <div class="marquee">
+                    <div class="marquee_row">
+                        <p>熱門漫畫預告</p>
+                    </div>
+                    <div class="message">
+                        <p>晨曦公主漫畫 每週一更新! 晨曦公主199 每月更新! FAIRY TAIL魔導少年546 預計08月03日發行! 死神687 + ONE PIECE航海王995 預計11月06日發行!
+                        </p>
+                    </div>
+                    <div class="marquee_both"></div>
+
+                </div>
+
+            </div>
         </div>
-    </article>
+    </section>
 
-    <section id="basic_concepts">
+    <!-- 漫畫選單 -->
+    <section id="comic_menu">
+        <div class="row">
+            <ul class="nav_menw">
+                <li>熱門連載漫畫</li>
+                <li>經典完結漫畫</li>
+                <li>最新上架漫畫</li>
+                <li>2019新番漫畫</li>
+            </ul>
+            <ul class="nav_comic_1">
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+                <li>
+                    <img src="https://fakeimg.pl/140x186/" alt="漫畫圖示">
+                    <p class="comic_number">更新至#話</p>
+                    <p class="comic_name">漫畫名稱</p>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- 熱門漫畫更新預告區 和 漫畫索引 -->
+    <section id="hot_comic_update_index">
+        <!-- 左方 熱門漫畫更新預告與最新章節更多 欄位 -->
+        <div class="hot_comic_update_index_left">
+            <div class="left_header">
+                <h3>熱門漫畫更新預告與最新章節</h3>
+                <a href="#">更多</a>
+                <div class="hot_comic_update_index_both">
+                    <!-- 清除浮動 -->
+                </div>
+            </div>
+
+            <ul class="comic_update">
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+                <li class="comic_update_li">
+                    <div class="li_row1">
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="#" class="li_row1_comic_name">漫畫名稱###回</a>
+                        <p class="li_row1_update_date">6月28日更新</p>
+                    </div>
+                    <div class="li_row2">
+                        <h4>漫畫名稱漫畫</h4>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+                        <a href="#">第###話</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <div></div>
+        </div>
+        <div class="hot_comic_update_index_right">
+            <div class="left_header">
+                <h3>漫畫索引</h3>
+                <a href="#">更多</a>
+                <div class="hot_comic_update_index_both"></div>
+            </div>
+            <!-- 右方漫畫索引 -->
+            <div class="comic_indexlabel_right">
+                <div class="comic_indexlabel_right_row1">
+                    <h4>按類型</h4>
+                    <ul>
+                        <li><a href="#">熱血</a></li>
+                        <li><a href="#">冒險</a></li>
+                        <li><a href="#">魔幻</a></li>
+                        <li><a href="#">神鬼</a></li>
+                        <li><a href="#">搞笑</a></li>
+                        <li><a href="#">萌系</a></li>
+                        <li><a href="#">愛情</a></li>
+                        <li><a href="#">科幻</a></li>
+                        <li><a href="#">魔法</a></li>
+                        <li><a href="#">格鬥</a></li>
+                        <li><a href="#">武俠</a></li>
+                        <li><a href="#">機戰</a></li>
+                        <li><a href="#">戰爭</a></li>
+                        <li><a href="#">競技</a></li>
+                        <li><a href="#">體育</a></li>
+                        <li><a href="#">校園</a></li>
+                        <li><a href="#">生活</a></li>
+                        <li><a href="#">勵志</a></li>
+                        <li><a href="#">歷史</a></li>
+                        <li><a href="#">偽娘</a></li>
+                        <li><a href="#">宅男</a></li>
+                        <li><a href="#">腐女</a></li>
+                        <li><a href="#">耽美</a></li>
+                        <li><a href="#">百合</a></li>
+                        <li><a href="#">後宮</a></li>
+                        <li><a href="#">治癒</a></li>
+                        <li><a href="#">美食</a></li>
+                        <li><a href="#">推理</a></li>
+                        <li><a href="#">懸疑</a></li>
+                        <li><a href="#">恐怖</a></li>
+                        <li><a href="#">四格</a></li>
+                        <li><a href="#">職場</a></li>
+                        <li><a href="#">偵探</a></li>
+                        <li><a href="#">社會</a></li>
+                        <li><a href="#">音樂</a></li>
+                    </ul>
+                </div>
+                <div class="comic_indexlabel_right_row1">
+                    <h4>按地區</h4>
+                    <ul>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">港臺</a></li>
+                        <li><a href="#">其他</a></li>
+                        <li><a href="#">歐美</a></li>
+                        <li><a href="#">內地</a></li>
+                        <li><a href="#">韓國</a></li>
+                    </ul>
+                </div>
+                <div class="comic_indexlabel_right_row1">
+                    <h4>按年份</h4>
+                    <ul>
+                        <li><a href="#">2020年</a></li>
+                        <li><a href="#">2019年</a></li>
+                        <li><a href="#">2018年</a></li>
+                        <li><a href="#">2017年</a></li>
+                        <li><a href="#">2016年</a></li>
+                        <li><a href="#">2015年</a></li>
+                        <li><a href="#">2014年</a></li>
+                        <li><a href="#">2013年</a></li>
+                        <li><a href="#">2012年</a></li>
+                        <li><a href="#">2011年</a></li>
+                        <li><a href="#">2010年</a></li>
+                        <li><a href="#">00年代</a></li>
+                        <li><a href="#">90年代</a></li>
+                        <li><a href="#">80年代</a></li>
+                        <li><a href="#">更早</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 熱門連載區 經典完結 最新上架 和 漫畫排行榜 -->
+    <section id="comic_ranking">
         <div class="container">
-            <div class="row">
-                <h2>基本概念</h2>
-                <h3>網頁的基本架構</h3>
-                <div class="box">
-                    <div class="columnpix">
-
+            <div class="left">
+                <div class="left_row">
+                    <!-- 頂部導航 -->
+                    <div class="left_row_head  blue">
+                        <h3>熱門連載</h3>
                         <ul>
-                            <li>基本的網頁是由HTML、CSS與JavaScript所組成</li>
-                            <li>HTML負責建構網頁的內容及基本架構</li>
-                            <li>CSS專門負責美化網頁的任務</li>
-                            <li>JavaScript 負責控制網頁動態內容及使用者的操作行為</li>
-                            <li>本學期以講述靜態網頁HTML與CSS的基本概念為主。</li>
+                            <li>少女/愛情</li>
+                            <li>少年/熱血</li>
+                            <li>競技/體育</li>
+                            <li>武俠/格鬥</li>
                         </ul>
+                    </div>
+                    <div class="left_row_body">
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="left_row">
+                    <!-- 頂部導航 -->
+                    <div class="left_row_head  green">
+                        <h3>熱門連載</h3>
+                        <ul>
+                            <li>少女/愛情</li>
+                            <li>少年/熱血</li>
+                            <li>競技/體育</li>
+                            <li>武俠/格鬥</li>
+                        </ul>
                     </div>
-                    <div class="column">
-                        <img src="image/Introduction_1.jpg" alt="網頁基本架構介紹圖" />
+                    <div class="left_row_body">
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
                     </div>
+
+                </div>
+                <div class="left_row">
+                    <!-- 頂部導航 -->
+                    <div class="left_row_head purple">
+                        <h3>熱門連載</h3>
+                        <ul>
+                            <li>少女/愛情</li>
+                            <li>少年/熱血</li>
+                            <li>競技/體育</li>
+                            <li>武俠/格鬥</li>
+                        </ul>
+                    </div>
+                    <div class="left_row_body">
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                        <div class="comic_image">
+                            <img src="https://fakeimg.pl/122x162/" alt="漫畫圖示">
+                            <p class="page">更新至第###話</p>
+                            <p class="name">漫畫名稱</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_row">
+                    <div class="right_row_head">
+                        <h3>漫畫排行榜</h3>
+                        <ul>
+                            <li>
+                                <a href="#">日</a>
+                            </li>
+                            <li>
+                                <a href="#">周</a>
+                            </li>
+                            <li>
+                                <a href="#">月</a>
+                            </li>
+                            <li>
+                                <a href="#">總</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_row_body">
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+                        </div>
+
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                        <div class="comic_rank">
+                            <div>
+                                <p class="number">#</p>
+                                <p class="comic_rank_name">漫畫名稱</p>
+                                <a href="#">第#話</a>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-arrow-up"></i>
+                                <p class="evaluation">#.#</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right_row_footer">
+                    <a href="#">更多排行</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-    <section id="basic_concepts2">
+    <section id="bottom_menu">
         <div class="container">
             <div class="row">
-                <h2>教學影片</h2>
-                <h3>
-                    利用Div標籤與CSS建立基本單欄網頁版型--以單純色塊為例--第一步驟
-                </h3>
-                <div class="youtubevideo">
-                    <iframe src="https://www.youtube.com/embed/4T7yrtgy3us" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="row_head orange">
+                    <div class="row_head1">
+                        <a href="#">推理</a>
+                        <a href="#">恐怖</a>
+                        <a href="#">懸疑</a>
+                    </div>
+                    <div class="row_head2">
+                        <div class="row_head2_1">
+                            <a href="#">熱門連載</a>
+
+                        </div>
+                        <div class="row_head2_2">
+                            <a href="#">精彩完結</a>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    在早期瀏覽器以IE為主的網頁設計時代，大多以表格(TABLE)或頁框(FRAME)，來製作網頁主要的定位與架構，但是隨著上網習慣的改變，網路速度的需求、網頁跨瀏覽器的問題以及行動上網的迅速發展等，目前網頁設計的架構，多半以DIV搭配CSS為設計主流，以Div標籤來建立網頁區塊，區分各個主要頁面做為主要的排版架構，搭配CSS語法來美化網頁，以往的網頁設計大多直接寫在HTML網頁本身，現在則分開以HTML為架構設定，CSS為風格設定，一個建築網頁架構，一個塑造網頁美感。
-                </p>
+                <div class="row_body">
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-
-    <section id="basic_concepts3">
-        <div class="container">
             <div class="row">
-                <h2>基本概念</h2>
-                <h3>網頁的基本架構</h3>
-                <div class="box">
-                    <div class="columnpix">
-
-                        <p>•HTML (HyperText Markup Language)
-                            超文本標記語言：是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計賞心悅目的網頁。</p>
-                        <p>
-                            •HTML 在 1989 年時由 Tim Berners-Lee 所發展出來的，在 1990 年被
-                            WWW 開始採用，並於 1991 年提出 HTML
-                            語法的基本草稿。由於全世界的人都在使用 HTML 來設計網頁 (WebPage)
-                            構建網站，所以 HTML 的語法必須統一。全球資訊網協會 W3C (The World
-                            Wide Web Consortium) 在 1993 年推出 HTML1.0 版。
-                        </p>
-
+                <div class="row_head green">
+                    <div class="row_head1">
+                        <a href="#">百合</a>
+                        <a href="#">後宮</a>
+                        <a href="#">治癒</a>
                     </div>
-                    <div class="column">
-                        <img src="image/Introduction_2.jpg" alt="網頁基本架構介紹圖" />
+                    <div class="row_head2">
+                        <div class="row_head2_1">
+                            <a href="#">熱門連載</a>
+
+                        </div>
+                        <div class="row_head2_2">
+                            <a href="#">精彩完結</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_body">
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="basic_concepts4">
-        <div class="container">
             <div class="row">
-                <h2>認識CSS</h2>
-                <h3>Cascading Style Sheets</h3>
-                <div class="box">
-                    <div class="columnpix">
-
-                        <p>CSS的中文稱為「串接樣式表」，CSS的特色:</p>
-                        <p>
-                            (1)它能讓我們更精確的控制網頁版面的文字、背景、字型等網頁外觀及美化。
-                        </p>
-                        <p>
-                            (2)它能只修正一個 CSS 文件，便可同時更新眾多的網頁版面外觀及格式。
-                        </p>
-                        <p>(3)它可以使 html 的文件內碼更精簡，縮小檔案下載的速度。</p>
-                        <p>(4)適用於各種作業平台。</p>
+                <div class="row_head blue">
+                    <div class="row_head1">
+                        <a href="#">社會</a>
+                        <a href="#">歷史</a>
+                        <a href="#">戰爭</a>
                     </div>
-                    <div class="column">
-                        <img src="image/Introduction_3.jpg" alt="網頁基本架構介紹圖" />
+                    <div class="row_head2">
+                        <div class="row_head2_1">
+                            <a href="#">熱門連載</a>
+
+                        </div>
+                        <div class="row_head2_2">
+                            <a href="#">精彩完結</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row_body">
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row_head purple">
+                    <div class="row_head1">
+                        <a href="#">校園</a>
+                        <a href="#">勵志</a>
+                        <a href="#">冒險</a>
+                    </div>
+                    <div class="row_head2">
+                        <div class="row_head2_1">
+                            <a href="#">熱門連載</a>
+
+                        </div>
+                        <div class="row_head2_2">
+                            <a href="#">精彩完結</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_body">
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
+                    </div>
+                    <div class="comic_rank">
+                        <div>
+                            <p class="number">#</p>
+                            <p class="comic_rank_name">漫畫名稱</p>
+                            <a href="#">第#話</a>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-arrow-up"></i>
+                            <p class="evaluation">#.#</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
+
+
+
+
+
+
+    </section>
 
     <footer>
-        <div class="row">
-            <div class="goback">
-                <a href="#top">▲回到本頁開頭</a>
-            </div>
-            <div class="statement">
-                <p>
-                    © Copyright 2021 HomeWork example 本網頁為練習用，如有侵權敬請告知
-                </p>
-            </div>
-            <div class="image_source">
-                <a href="https://visualhunt.com/">圖片來源：visualhunt</a>
+        <div class="container">
+            <div class="row">
+                <p>&copy; 2021 本網頁僅用於練習html與css之用途，若有侵權敬請告知</p>
             </div>
         </div>
     </footer>
+
+
+
+
 </body>
 
 </html>
