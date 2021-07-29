@@ -1,859 +1,97 @@
-body {
-  background-color: rgb(245, 245, 245);
+html{
+  /* 讓畫面平滑滾動 */
+  scroll-behavior: smooth;
+  
 }
 
-#top .container_top1 {
-  padding: 1px 0px;
-  background-color: rgb(238, 238, 238);
-  border-bottom: 1px solid rgb(206, 206, 206);
+.banner{
+  /* 把內容往下推 不然會被nav擋住 */
+  margin-top: 50px ;
+  
 }
 
-#top .box_top1 {
-  width: 960px;
-  margin: 10px auto;
-
-  display: flex;
-  justify-content: space-between;
-}
-#top .header_edit_left {
-  font-size: 0px;
-  width: auto;
+img {
+  vertical-align: bottom;
 }
 
-#top .header_edit_right {
-  font-size: 0px;
-  width: auto;
-}
-
-#top .header_edit_left a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-  margin-right: 5px;
-}
-#top .header_edit_right a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-  margin-left: 5px;
-}
-
-#top .header_edit_left a:hover {
-  color: red;
-}
-
-#top .header_edit_right a:hover {
-  color: red;
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 以上最頂部上層導航區 */
-
-/* ------------------------分隔------------------------ */
-
-#top .box_top2 {
-  width: 960px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#top .edit_html a {
-  text-decoration: none;
-  color: rgb(200, 200, 200);
-  margin-left: 10px;
-}
-
-#top .edit_html a:hover {
-  color: rgb(0, 0, 0);
-}
-
-/* 以上logo */
-#top nav {
-  margin-bottom: 20px;
-}
-
-#top .box_top3 {
-  width: 960px;
-  margin: 0px auto;
-  font-size: 0px;
-}
-
-#top .item_head {
-  float: left;
-  background-color: rgb(228, 129, 0);
-}
-
-#top .item_first {
-  float: left;
-  background-color: rgb(90, 90, 90);
-}
-
-#top .box_top3 li {
-  float: left;
-  background-color: rgb(255, 108, 10);
-  transition: background-color 0.3s 0s ease;
-}
-
-#top .item_final {
-  float: left;
-  background-color: cornflowerblue;
-}
-
-#top .item_final a {
-  color: rgb(0, 0, 0);
-}
-
-#top .box_top3 h2,
-.box_top3 a {
-  display: block;
-  padding: 15px 22px;
-
-  font-size: 16px;
-  text-decoration: none;
-  color: rgb(240, 240, 240);
-}
-
-#top .box_top3 li:hover {
-  background-color: rgb(167, 72, 9);
-}
-
-#top .item_final a:hover {
-  color: rgb(0, 204, 255);
-}
-
-#top .item_both {
-  clear: both;
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 以上導航欄 */
-
-/* ------------------------分隔------------------------ */
-
-#top_update {
-  width: 960px;
-  margin: 0px auto;
-}
-
-#top_update .comic_update_header {
-  display: flex;
-}
-
-#top_update .row_h3 {
-  flex-grow: 2;
+footer {
+  background-color: #333;
+  color: #aaa;
   text-align: center;
-  border-top: 3px solid red;
-  border-left: 1px solid rgb(190, 190, 190);
-  border-right: 1px solid rgb(190, 190, 190);
-  margin-right: 10px;
-}
-#top_update .row_h3 h3 {
-  margin: 15px 0px;
+  padding: 10px 0;
 }
 
-#top_update .row_text {
-  flex-grow: 10;
+#content_1 ,#content_2 ,#content_3{
+  /* 修正位置 點擊按紐時的位置沒修改會在預定位置下面一點的地方 */
+  padding-top: 50px;
 }
 
-#top_update .row_text p {
-  float: left;
-  margin: 20px 0px;
-
-  font-size: 12px;
+.item-group {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
 }
 
-#top_update .row_text span {
-  color: red;
+.banner img {
+  width: 100%;
 }
 
-#top_update .row_text a {
-  float: right;
-  margin: 20px 0px;
-  font-size: 12px;
+.title {
+  margin: 0 0px 20px;
+  padding: 30px 10px;
+  background-color: #ccc;
 }
 
-/* ------------------------分隔------------------------ */
-
-#top_update .row {
-  display: flex;
-  justify-content: space-between;
-}
-
-#top_update .comic_image {
-  /* 幫助子元素定位 */
-  position: relative;
-}
-
-#top_update .page {
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 10px;
-  left: 7px;
-}
-
-#top_update .min {
-  font-size: 14px;
-  color: rgb(255, 255, 19);
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-#top_update .name {
-  position: absolute;
-  left: 35px;
-}
-
-#top_update .bottom_button {
+.title h2 {
   text-align: center;
-  margin: 30px 0px 20px;
+  font-size: 46px;
 }
 
-/* ------------------------分隔------------------------ */
-
-#top_update .marquee {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.178);
-  margin-bottom: 10px;
-}
-
-#top_update .marquee_row {
-  display: block;
-  float: left;
-  padding: 8px 25px;
-  background-color: #ff5226;
-}
-
-#top_update .message {
-  margin: auto 5px;
-  float: right;
-  font-size: 10px;
-  line-height: 32px;
-}
-
-#top_update .marquee_both {
-  clear: both;
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 以上漫畫更新區 */
-
-/* ------------------------分隔------------------------ */
-
-#comic_menu {
-  width: 960px;
-  margin: 0px auto;
-}
-
-#comic_menu .nav_menw {
-  display: flex;
-  justify-content: space-around;
-}
-
-#comic_menu .nav_menw li {
-  padding: 10px 71px;
-  margin-bottom: 20px;
-  background-color: rgb(245, 245, 245);
-  border: 1px solid rgb(204, 204, 204);
-}
-
-#comic_menu .nav_menw li:hover {
-  border-top: 3px solid red;
-  padding: 8px 71px;
-  background-color: rgb(255, 255, 255);
-}
-
-/* ------------------------分隔------------------------ */
-
-#comic_menu .nav_comic_1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#comic_menu .nav_comic_1 li {
-  position: relative;
-}
-
-#comic_menu .comic_number {
-  position: absolute;
-  bottom: 50px;
-  left: 34px;
-}
-
-#comic_menu .comic_name {
-  margin: 5px 0px 20px;
+.title p {
+  font-size: 22px;
   text-align: center;
 }
 
-/* ------------------------分隔------------------------ */
-
-/* 以上漫畫更新區 */
-
-/* ------------------------分隔------------------------ */
-
-#hot_comic_update_index {
-  width: 960px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
+.item {
+  margin: 0 10px 40px;
 }
 
-#hot_comic_update_index .hot_comic_update_index_left {
-  width: 710px;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.item .text h3 {
+  font-size: 24px;
+  text-align: center;
 }
 
-#hot_comic_update_index .hot_comic_update_index_right {
-  width: 230px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.item .pic img {
+  width: 100%;
 }
 
-/* ------------------------分隔------------------------ */
-
-#hot_comic_update_index {
-  margin-bottom: 20px;
-}
-
-#hot_comic_update_index .left_header {
-  background-color: rgb(211, 211, 211);
-}
-
-#hot_comic_update_index .left_header h3 {
-  padding: 10px;
-  float: left;
-}
-
-#hot_comic_update_index .left_header a {
-  padding: 10px;
-  float: right;
-}
-
-#hot_comic_update_index .hot_comic_update_index_both {
-  clear: both;
-  /* 清除浮動 */
-}
-
-#hot_comic_update_index .comic_update_li {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 20px;
-  font-size: 14px;
-}
-
-#hot_comic_update_index .li_row1 {
-  width: 284px;
-  margin-right: 10px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#hot_comic_update_index .fa-angle-double-right {
-  float: left;
-  margin-right: 5px;
-}
-
-#hot_comic_update_index .li_row1_comic_name {
-  float: left;
-  text-decoration: none;
-  color: black;
-}
-
-#hot_comic_update_index .li_row1_comic_name:hover {
-  color: red;
-}
-
-#hot_comic_update_index .li_row1_update_date {
-  float: right;
-  color: red;
-}
-
-#hot_comic_update_index .li_row2 {
-  width: 426px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#hot_comic_update_index .li_row2 h4 {
-  float: left;
-  margin-right: 10px;
-}
-
-#hot_comic_update_index .li_row2 a {
-  float: left;
-  padding: 0px 2px;
-  margin: 0px 2px;
-  text-decoration: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
-  border-right: 1px solid rgb(0, 0, 0, 0.5);
-  color: #ff5226;
-}
-
-#hot_comic_update_index .li_row2 a:hover {
-  text-decoration: underline;
-  /* 底線 */
-}
-
-/* 左邊欄位結束 */
-/* ------------------------分隔------------------------ */
-
-#hot_comic_update_index .left_header {
-  background-color: rgb(211, 211, 211);
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 {
-  margin: 10px 5px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 h4 {
-  margin-top: 5px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 ul {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 172px;
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 li {
-  font-size: 14px;
-  margin: 3px;
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 a {
-  text-decoration: none;
-  color: black;
-}
-
-#hot_comic_update_index .comic_indexlabel_right_row1 a:hover {
-  color: rgb(255, 0, 0);
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 以上熱門漫畫更新預告 */
-
-/* 漫畫排行榜開始 */
-
-/* ------------------------分隔------------------------ */
-
-#comic_ranking {
-  width: 960px;
-
-  margin: 0px auto;
-  margin-bottom: 20px;
-}
-
-#comic_ranking .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#comic_ranking .left_row {
-  width: 712px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#comic_ranking .left_row:nth-last-of-type(1) {
-  /* 只選最後的紫色熱門連載 */
-  /* 把底下的外距取消 不然會不同高 */
+.service .item {
   margin-bottom: 0px;
 }
 
-#comic_ranking .left_row_head {
-  display: flex;
-  justify-content: space-between;
+.service .wrap{
+  /* margin: 60px 0; */
+  background-color: #ffa;
 }
 
-/* 導航欄通用開始 */
+@media screen and (min-width: 768px) {
+  .item-group {
+    display: flex;
+  }
+  .service .item {
+    display: flex;
+  }
+  .service .item .pic,
+  .service .item .text {
+    width: 50%;
+    margin: 0;
+  }
 
-#comic_ranking .left_row_head h3 {
-  text-align: center;
-  padding: 10px 27.1px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
+  .service .item .text {
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
-#comic_ranking .left_row_head ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-#comic_ranking .left_row_head li {
-  padding: 10px 39px;
-  background-color: #eeeeee;
-}
-
-#comic_ranking .left_row_head li:hover {
-  background-color: #ffffff;
-  padding: 5px 39px;
-}
-
-/* 導航欄通用結束 */
-
-/* 導航欄顏色開始 */
-
-#comic_ranking .blue h3 {
-  background-color: rgb(35, 57, 255);
-}
-
-#comic_ranking .blue li:hover {
-  border-top: 5px solid rgb(35, 57, 255);
-}
-
-#comic_ranking .green h3 {
-  background-color: green;
-}
-
-#comic_ranking .green li:hover {
-  border-top: 5px solid green;
-}
-
-#comic_ranking .purple h3 {
-  background-color: purple;
-}
-
-#comic_ranking .purple li:hover {
-  border-top: 5px solid purple;
-}
-
-/* 導航欄顏色結束 */
-
-/* 左導航欄內容 開始 */
-#comic_ranking .left_row_body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px 0 0;
-  background-color: #ffffff;
-}
-
-#comic_ranking .comic_image {
-  position: relative;
-}
-
-#comic_ranking .page {
-  font-size: 14px;
-  color: #ffffff;
-  position: absolute;
-  bottom: 44px;
-  left: 14px;
-}
-
-#comic_ranking .name {
-  text-align: center;
-  margin: 10px 0px;
-}
-
-/* 左導航欄內容 結束 */
-
-/* 右排行榜開始 */
-
-#comic_ranking .right {
-  background-color: #ffffff;
-}
-
-#comic_ranking .right_row {
-  width: 232px;
-}
-
-#comic_ranking .right_row_head {
-  display: flex;
-  background-color: #eeeeee;
-}
-
-#comic_ranking .right_row_head h3 {
-  margin: 10px 3px;
-}
-
-#comic_ranking .right_row_head ul {
-  display: flex;
-}
-
-#comic_ranking .right_row_head a {
-  display: inline-block;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: black;
-}
-
-#comic_ranking .right_row_head a:hover {
-  color: #ff3300;
-}
-
-#comic_ranking .right_row_head a:active {
-  padding: 5px 10px;
-  border-top: 5px solid #ff3300;
-  background-color: #ffffff;
-}
-
-/* 右導航欄結束 */
-
-/* 右排行內容開始 */
-#comic_ranking .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#comic_ranking .right_row_body {
-  padding: 15px;
-}
-
-#comic_ranking .comic_rank {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.061);
-}
-
-#comic_ranking .comic_rank div {
-  display: flex;
-}
-
-#comic_ranking .number {
-  margin: 0px 2px;
-}
-
-#comic_ranking .comic_rank_name {
-  margin: 0px 5px;
-}
-
-#comic_ranking .comic_rank a {
-  text-decoration: none;
-  color: #ff5226;
-}
-
-#comic_ranking .comic_rank a:hover {
-  text-decoration: underline;
-}
-
-/* 排行內容結束 */
-
-#comic_ranking .right_row_footer {
-  text-align: center;
-  background-color: #eeeeee;
-}
-
-#comic_ranking .right_row_footer a {
-  display: block;
-  width: 100%;
-  padding: 10px 0px;
-  text-decoration: none;
-  color: black;
-}
-
-#comic_ranking .right_row_footer a:hover {
-  color: #ff5226;
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 漫畫排行結束 */
-
-/* 網頁尾部漫畫選單開始 */
-
-/* ------------------------分隔------------------------ */
-
-#bottom_menu {
-  width: 960px;
-  margin:  auto;
-  margin-bottom: 20px;
-}
-#bottom_menu .container {
-  display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#bottom_menu .container .row{
-  border-left: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#bottom_menu .row {
-  width: 239px;
-  text-align: center;
-}
-
-#bottom_menu .row_head {
-  font-size: 0;
-}
-
-#bottom_menu .row_head1 {
-  padding: 8px 0;
-  background-color: rgb(233, 233, 233);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#bottom_menu .row_head1 a {
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-#bottom_menu .row_head1 a:hover{
-  color: #ff5226;
-}
-
-#bottom_menu .row_head1 a+a::before{
-  /* 選擇第一個a 之後的第二跟第三個 */
-  /* 在他們之前加入 /  */
-  content: "/";
-  font-size: 20px;
-  margin: 0px 5px;
-  opacity:30%;
-}
-
-
-
-
-#bottom_menu .row_head2 a {
-  
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-#bottom_menu .row_head2 {
-  display: flex;
-justify-content: space-around;
-}
-#bottom_menu .row_head2_1{
-  border-right: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-#bottom_menu .row_head2_1,
-.row_head2_2 {
-  width: 100%;
-  
-}
-
-#bottom_menu .row_head2_1 a,
-.row_head2_2 a{
-  display: block;
-  padding: 5px 0;
-  
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-
-}
-
-#bottom_menu .row_head2_1 a:hover,
-.row_head2_2 a:hover{
-  
-  background-color: #ffffff;
-  border-bottom: 0px solid rgba(0, 0, 0, 0);
-}
-
-/* 頭部選單顏色開始 */
-
-#bottom_menu .orange {
-  border-top: 3px solid orange;
-}
-
-#bottom_menu .green {
-  border-top: 3px solid green;
-}
-
-#bottom_menu .blue {
-  border-top: 3px solid blue;
-}
-
-#bottom_menu .purple {
-  border-top: 3px solid purple;
-}
-
-/* 頭部選單顏色結束 */
-
-
-/* 底部漫畫選單頭部結束 */
-
-/* 底部漫畫選單body開始 */
-
-#bottom_menu .row_body{
-  
-  padding: 8px;
-  background-color: #ffffff;
-}
-
-#bottom_menu .comic_rank{
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-top: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.034);
-}
-
-#bottom_menu .comic_rank div{
-  display: flex;
-  
-}
-
-#bottom_menu .number{
-  margin: 0px 3px;
-}
-
-#bottom_menu .comic_rank_name{
-  margin: 0 3px;
-}
-
-#bottom_menu .comic_rank i{
-  margin: 0 3px;
-}
-
-/* ------------------------分隔------------------------ */
-
-/* 網頁尾部漫畫選單結束 */
-
-/* 頁尾開始 */
-
-/* ------------------------分隔------------------------ */
-
-footer {
-  width: auto;
-}
-
-footer .container{
-  padding: 20px 0px;
-  background-color: rgb(172, 172, 172);
-}
-
-footer .row{
-  text-align: center;
-  font-size: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

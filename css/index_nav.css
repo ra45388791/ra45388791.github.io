@@ -1,0 +1,158 @@
+
+
+#menu_control {
+  /* 把按鈕隱藏起來 */
+  /* 按鈕還是存在 只是z-index: 比上層還低所以不會顯示 */
+  /* fixed 讓框框跟著畫面移動 不然選單按下去會回到最上面的按鈕位置 */
+  position: fixed;
+  z-index: -5;
+
+  /* 確保不會因為某些瀏覽器不支援z-index: -2;  把按鈕透明度設0*/
+  /* 確保按鈕不會出現 */
+  opacity: 0;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+
+  background-color: rgb(50, 50, 50);
+  /* 讓畫面跟著視窗移動 */
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  margin-left: 10px;
+  top: 5px;
+}
+
+.logo a {
+  display: block;
+  height: 40px;
+}
+
+.logo img {
+  display: block;
+}
+
+.menu_btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  /* 絕對定位 定在畫面右上角 */
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.menu_btn span {
+  /* 手機板  "選單" 文字不需要顯示 所以透明度設為0*/
+  opacity: 0;
+  color: #fff;
+
+  /* 
+    第二種方法隱藏"選單"文字
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden; 
+    */
+}
+
+.menu_btn::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 36px;
+  left: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #aaa;
+
+  /* 使用陰影製作除了中間的橫槓上下的兩條槓 */
+  box-shadow: 0px 8px 0px #aaa, 0px -8px 0px #aaa;
+}
+
+nav {
+  /* height: 100vh 的 vh 代表 viewport height  視口高度*/
+  width: 80%;
+  /* 計算機 */
+  height: calc(100vh - 50px);
+  background-color: #aaa;
+  position: absolute;
+  top: 50px;
+
+  /* -100% 讓nav選單在畫面左側準備 */
+  left: -100%;
+
+  /* 選單收放動畫 */
+  transition: 0.5s;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #a6e22c;
+  padding: 10px 20px;
+  border-bottom: 1px solid #a6e22c;
+  
+}
+
+.menu_btn:active{
+  /* 按下去變色 */
+  background-color: #cfcfcf;
+  
+}
+
+#menu_control:checked ~ .header nav {
+  /* 如果menu_control 的框框被打勾 ~ 間接選取 header之下的nav */
+  /* 把nav的左位移設為零 選單就會出現 */
+  left: 0;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .menu_btn {
+    /* 在解析度768以上 如電腦畫面就把三條槓按鈕隱藏 */
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aaa;
+  }
+
+  .logo {
+      position: relative;
+      top: 0px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    /* 因為在上面手機板有作絕對定位 這裡把nav的定位變回相對定位 */
+    /* 並且左側位移設0 上位移設0 不要有任何位移 */
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  nav a {
+    /* 這裡做的都是把上方手機板的複寫成桌機板要有的樣式 */
+    border-bottom: none;
+  }
+}
