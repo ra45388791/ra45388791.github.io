@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.0px"
+   height="16.0px"
+   viewBox="0 0 16.0 16.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="inkscape 音響.svg"
+   inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音響.webp"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#545454"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.45291836"
+     inkscape:cx="429.43722"
+     inkscape:cy="610.4853"
+     inkscape:window-width="1410"
+     inkscape:window-height="969"
+     inkscape:window-x="208"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g5506"
+     inkscape:snap-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20"
+       empcolor="#009d09"
+       empopacity="0.25098039"
+       color="#3f3fff"
+       opacity="0.1254902" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9">
+    <linearGradient
+       id="linearGradient4115"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4113" />
+    </linearGradient>
+  </defs>
+  <ellipse
+     style="stroke-width:41.33669291;fill-opacity:1;opacity:1;fill:none;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+     id="path137"
+     cx="624.2652"
+     cy="622.32642"
+     rx="624.2652"
+     ry="622.32642"
+     inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音響(加圓環 深色底 ).webp"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <g
+     inkscape:label="圖層 1"
+     id="layer1"
+     style="display:inline"
+     transform="translate(244,308)">
+    <rect
+       style="display:inline;fill:#000000"
+       id="rect161"
+       width="500"
+       height="700"
+       x="0"
+       y="0"
+       ry="40"
+       inkscape:label="底圖" />
+    <rect
+       style="display:inline;fill:#ffffff"
+       id="rect4348"
+       width="460"
+       height="660"
+       x="20"
+       y="20"
+       ry="30"
+       inkscape:label="中間黑背景"
+       inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音響(加圓環 淺色底 ).webp"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g5506"
+       inkscape:label="高音喇叭">
+      <circle
+         style="fill:#000000"
+         id="path5217"
+         cx="250"
+         cy="170"
+         r="100"
+         inkscape:label="外圈" />
+      <circle
+         style="fill:#ffffff"
+         id="path5422"
+         cx="249.89803"
+         cy="170.02519"
+         r="85"
+         inkscape:label="2"
+         inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音響(加圓環 淺色底 ).webp"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+    <ellipse
+       style="fill:#000000;stroke-width:1.1027"
+       id="path5219"
+       cx="249.98929"
+       cy="470.02783"
+       rx="159.81"
+       ry="159.97604"
+       inkscape:label="低音喇叭" />
+    <path
+       d="m 800,-20 a 21.471436,22.832876 2.0199972 0 0 -17.74539,-6.168857 l -83.52557,11.820091 a 26.833563,28.534999 2.0199965 0 0 -23.40589,25.817259 l -9.0446,100.521007 a 2.0161922,2.144033 2.0199977 0 1 -3.06006,1.64748 35.045332,37.267452 2.0199966 0 0 -18.93267,-5.28588 c -17.98619,0.24782 -33.17953,12.73813 -34.59209,28.43711 a 22.425587,23.847526 2.0199967 0 0 5.9956,18.52191 c 4.92873,5.6937 12.23759,9.24385 20.46772,10.04341 a 39.716964,42.235298 2.0199965 0 0 4.10669,0.1692 c 17.98344,-0.24738 33.17624,-12.73918 34.58874,-28.43744 l 6.88915,-76.565535 a 5.3944943,5.7365431 2.0199977 0 1 4.6813,-5.163442 l 98.76978,-13.977994 a 5.3944943,5.7365431 2.0199977 0 1 6.05948,6.206913 l -4.25173,47.253308 a 2.0161922,2.144033 2.0199977 0 1 -3.06812,1.646698 35.114786,37.34131 2.0199979 0 0 -18.87762,-5.378491 c -17.98643,0.137597 -33.18286,12.557013 -34.59696,28.273123 a 22.532803,23.961541 2.0199972 0 0 5.9874,18.55282 c 4.96157,5.76532 12.34169,9.36631 20.64566,10.17305 1.27547,0.12391 2.57113,0.1814 3.88371,0.1713 17.98675,-0.14117 33.18307,-12.55915 34.59717,-28.27526 L 806.44704,-0.865928 A 22.088431,23.488992 2.0199972 0 0 800,-20 Z m -98.72706,-97.47491 -1.55881,36.38795 a 6.7431179,7.1706789 2.0199973 0 1 -5.87521,6.81215 l -66.36918,9.59585 a 16.099869,17.120713 2.0199979 0 0 -14.04394,15.490328 l -7.64894,85.009816 c -1.41346,15.708979 -16.11127,28.155942 -33.4621,28.341609 a 36.629965,38.952561 2.0199965 0 1 -3.69933,-0.158432 c -7.84549,-0.762191 -14.87044,-4.216329 -19.65685,-9.760786 a 22.901652,24.353776 2.0199952 0 1 -6.05572,-18.907353 c 1.41345,-15.708967 16.1114,-28.157361 33.46216,-28.342313 a 33.089153,35.187238 2.019998 0 1 17.74772,5.021666 2.0269812,2.1555061 2.0199983 0 0 3.11635,-1.611049 L 606.24453,-89.7923 a 26.972471,28.682715 2.0199978 0 1 23.40696,-25.82147 l 64.0236,-9.26624 a 6.7431179,7.1706789 2.0199973 0 1 7.59785,7.4051 z"
+       style="fill:#000000;stroke-width:0.695361"
+       id="path7592"
+       inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音.webp"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="圖層 1"
+     id="layer1-0"
+     style="display:none"
+     transform="translate(-120,180)">
+    <rect
+       style="display:inline;fill:#ffffff"
+       id="rect161-1"
+       width="500"
+       height="700"
+       x="0"
+       y="0"
+       ry="40"
+       inkscape:label="底圖" />
+    <rect
+       style="display:inline;fill:#000000"
+       id="rect4348-7"
+       width="460"
+       height="660"
+       x="20"
+       y="20"
+       ry="30"
+       inkscape:label="中間黑背景" />
+    <g
+       id="g5506-3"
+       inkscape:label="高音喇叭">
+      <circle
+         style="fill:#ffffff"
+         id="path5217-3"
+         cx="250"
+         cy="170"
+         r="100"
+         inkscape:label="外圈" />
+      <circle
+         style="fill:#000000"
+         id="path5422-2"
+         cx="249.89803"
+         cy="170.02519"
+         r="85"
+         inkscape:label="2" />
+    </g>
+    <ellipse
+       style="fill:#ffffff;stroke-width:1.1027"
+       id="path5219-3"
+       cx="249.98929"
+       cy="470.02783"
+       rx="159.81"
+       ry="159.97604"
+       inkscape:label="低音喇叭" />
+    <path
+       d="m 800,-20 a 21.471436,22.832876 2.0199972 0 0 -17.74539,-6.168857 l -83.52557,11.820091 a 26.833563,28.534999 2.0199965 0 0 -23.40589,25.817259 l -9.0446,100.521007 a 2.0161922,2.144033 2.0199977 0 1 -3.06006,1.64748 35.045332,37.267452 2.0199966 0 0 -18.93267,-5.28588 c -17.98619,0.24782 -33.17953,12.73813 -34.59209,28.43711 a 22.425587,23.847526 2.0199967 0 0 5.9956,18.52191 c 4.92873,5.6937 12.23759,9.24385 20.46772,10.04341 a 39.716964,42.235298 2.0199965 0 0 4.10669,0.1692 c 17.98344,-0.24738 33.17624,-12.73918 34.58874,-28.43744 l 6.88915,-76.565535 a 5.3944943,5.7365431 2.0199977 0 1 4.6813,-5.163442 l 98.76978,-13.977994 a 5.3944943,5.7365431 2.0199977 0 1 6.05948,6.206913 l -4.25173,47.253308 a 2.0161922,2.144033 2.0199977 0 1 -3.06812,1.646698 35.114786,37.34131 2.0199979 0 0 -18.87762,-5.378491 c -17.98643,0.137597 -33.18286,12.557013 -34.59696,28.273123 a 22.532803,23.961541 2.0199972 0 0 5.9874,18.55282 c 4.96157,5.76532 12.34169,9.36631 20.64566,10.17305 1.27547,0.12391 2.57113,0.1814 3.88371,0.1713 17.98675,-0.14117 33.18307,-12.55915 34.59717,-28.27526 L 806.44704,-0.865928 A 22.088431,23.488992 2.0199972 0 0 800,-20 Z m -98.72706,-97.47491 -1.55881,36.38795 a 6.7431179,7.1706789 2.0199973 0 1 -5.87521,6.81215 l -66.36918,9.59585 a 16.099869,17.120713 2.0199979 0 0 -14.04394,15.490328 l -7.64894,85.009816 c -1.41346,15.708979 -16.11127,28.155942 -33.4621,28.341609 a 36.629965,38.952561 2.0199965 0 1 -3.69933,-0.158432 c -7.84549,-0.762191 -14.87044,-4.216329 -19.65685,-9.760786 a 22.901652,24.353776 2.0199952 0 1 -6.05572,-18.907353 c 1.41345,-15.708967 16.1114,-28.157361 33.46216,-28.342313 a 33.089153,35.187238 2.019998 0 1 17.74772,5.021666 2.0269812,2.1555061 2.0199983 0 0 3.11635,-1.611049 L 606.24453,-89.7923 a 26.972471,28.682715 2.0199978 0 1 23.40696,-25.82147 l 64.0236,-9.26624 a 6.7431179,7.1706789 2.0199973 0 1 7.59785,7.4051 z"
+       style="fill:#ffffff;stroke-width:0.695361"
+       id="path7592-1"
+       inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\音.webp"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

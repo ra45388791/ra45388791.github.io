@@ -1,0 +1,468 @@
+* {
+    /* 字體 */
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+h1,
+p {
+    margin-bottom: 0px;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+    text-align     : start;
+}
+
+/* 漢堡按鈕優化 */
+/*
+把bs的 navbar-toggler 預設的focus樣式全設回預設
+然後多寫一個active蓋過去
+*/
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline        : auto;
+    box-shadow     : none;
+}
+
+.navbar-toggler:active {
+    text-decoration: none;
+    outline        : 0;
+    box-shadow     : 0 0 0 0.25rem;
+}
+
+/* 漢堡按鈕優化結束 */
+
+/* 錨點 */
+/* .anchorPoint {
+    display   : block;
+    position  : relative;
+    top       : -85.8px;
+    visibility: hidden;
+} */
+/* 錨點結束 */
+
+
+/* banner開始 */
+.headerImageBox {
+    /* 首頁大圖往下推 */
+    margin-top: 85px;
+    width     : 100%;
+    height    : auto;
+    object-fit: cover;
+
+    position: relative;
+
+    background-color: #000;
+}
+
+#bannerMask {
+    position        : absolute;
+    left            : 0;
+    top             : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes banner {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+/* banner結束 */
+
+
+
+
+
+
+/* aboutUs開始 */
+#aboutUs {
+    background-color: rgb(0, 47, 96);
+}
+
+/* aboutUs結束 */
+
+
+
+
+/*服務項目開始*/
+#serviceItems {
+    /* background: hsl(0, 0%, 90%); */
+
+    /* background-color: rgb(143, 143, 143); */
+    background     : url(/images/non-javaScript/pexels-free-creative-stuff-4041750.jpg);
+    background-size: cover;
+
+}
+
+#serviceItems {
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+#serviceItems img {
+    width: 100%;
+}
+
+#serviceItems .contentSet picture,
+#serviceItems .contentSet img {
+    width : 120px;
+    height: auto;
+}
+
+#serviceItems .bannerImgSet {
+    width        : 100%;
+    height       : 100%;
+    /* box-shadow: 0px 0px 15px rgb(128, 128, 128); */
+}
+
+/*服務項目結束*/
+
+
+
+
+
+.img-fluid {
+    /* 蓋掉bs圖片的 max-width */
+    width: 100%;
+}
+
+/* 歷年實積內容放置區 */
+.achievementContent {
+    background-color: rgba(0, 0, 0, 0.500);
+
+}
+
+.achievementContent button {
+    opacity: 1;
+
+}
+
+.modal-header {
+    border: none;
+}
+
+/* 歷年實積內容放置區結束 */
+
+
+
+footer .logo {
+    width: 250px;
+}
+
+/* 圖片之間的長條 */
+#straightStrip {
+    display: none;
+
+    margin: auto auto;
+
+    width : 0px;
+    height: 10rem;
+
+    border-left : 3px solid rgb(155, 155, 155);
+    border-right: 3px solid rgb(155, 155, 155);
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {}
+
+/*等於1024*/
+@media only screen and (min-width: 992px) {
+
+    /*關於我們開始*/
+    #aboutUs {
+        /* 固定式背景 */
+        background     : url(/images/non-javaScript/AboutUsImage/aboutUsImageLG.jpg) 100% 100% no-repeat fixed;
+        background-size: contain;
+
+    }
+
+    #aboutUs .aboutUs-Set {
+        background: linear-gradient(110deg, rgb(0, 47, 96) 50%, transparent 0%);
+    }
+
+
+
+    /*關於我們結束*/
+
+
+
+    /*服務項目開始*/
+    #serviceItems {
+        /* background-color: rgba(0, 0, 0, 0); */
+    }
+
+    #serviceItems .containerBox {
+        /* 模擬 container */
+        width: 95vw;
+
+        background-color: rgba(255, 255, 255, 0.050);
+        border-left     : solid 1px rgba(255, 255, 255, 0.040);
+        border-right    : solid 1px rgba(255, 255, 255, 0.040);
+        box-sizing      : border-box;
+    }
+
+    #serviceItems .contentSet {
+        position: relative;
+    }
+
+    #serviceItems .article1 {
+        /* 預設: 1,1 */
+        z-index: 1;
+        opacity: 1;
+    }
+
+    #serviceItems .contentSet picture,
+    #serviceItems .contentSet img {
+        width : 90px;
+        height: auto;
+    }
+
+    #serviceItems .article1 p {
+        border       : 6px solid rgba(255, 255, 255, 0.192);
+        border-top   : 0px;
+        border-bottom: 0px;
+        
+    }
+
+    #serviceItems .article1 h3 {
+        display: none;
+    }
+
+    #serviceItems .article2 {
+        /* 預設:0,0 */
+        z-index: 0;
+        opacity: 0;
+    }
+
+    #serviceItems .article2 p {
+        background-color   : rgba(0, 0, 0, 0.4);
+        /* border          : solid 6px rgba(255, 255, 255, 0.411); */
+        border             : solid 6px rgb(30, 210, 255);
+        border-top         : 0px;
+        border-bottom      : 0px;
+        box-sizing         : border-box;
+        
+    }
+
+    #serviceItems .article2 h3 {
+        width      : 32vw;
+        font-size  : 16vw;
+        font-weight: bold;
+        color      : rgb(255, 255, 255);
+    }
+
+    /* 音響底圖 */
+    #serviceItems .SoundEngineer {
+        background         : url(/images/non-javaScript/ServiceItems/機器後製xl.jpg);
+        background-size    : cover;
+        background-position: 100% 100%;
+        background-repeat  : no-repeat;
+    }
+
+    /* 燈光底圖 */
+    #serviceItems .Light {
+        background         : url(/images/non-javaScript/ServiceItems/燈光xl.jpg);
+        background-size    : cover;
+        background-position: 100% 100%;
+        background-repeat  : no-repeat;
+    }
+
+    /* 機器遮罩 在第0層 */
+    #serviceItems .SoundEngineer .bannerMask {
+        background         : url(/images/non-javaScript/ServiceItems/機器遮罩xl.png);
+        background-size    : cover;
+        background-position: left 100%;
+
+        position: absolute;
+        left    : 0px;
+        top     : 0px;
+        width   : 100%;
+        height  : 100%;
+
+        z-index: 0;
+    }
+
+    /* 燈光遮罩 */
+    #serviceItems .Light .bannerMask {
+        background         : url(/images/non-javaScript/ServiceItems/燈光遮罩xl.png);
+        background-size    : cover;
+        background-position: right 100%;
+
+        position: absolute;
+        left    : 0px;
+        top     : 0px;
+        width   : 100%;
+        height  : 100%;
+
+        z-index: 0;
+    }
+
+    #AniBannerMask {
+        /* background-color: blueviolet; */
+        position: absolute;
+        left    : 0px;
+        top     : 0px;
+        width   : 100%;
+        height  : 100%;
+        z-index : 2;
+        opacity : 0;
+    }
+
+    /* 筆電上 sm大小圖片隱藏 */
+    #serviceItems .bannerImgSet {
+        display: none;
+    }
+
+    #serviceItems .article1,
+    #serviceItems .article2,
+    #serviceItems .bannerMask {
+        transition: opacity 0.2s 0s cubic-bezier(0.32, 0.32, 0.44, 0.88);
+    }
+
+
+
+    /* 動畫class開始 */
+    #serviceItems .opacityTransparent {
+        opacity: 1;
+    }
+
+    #serviceItems .opacityOpaque {
+        opacity: 0;
+    }
+
+    /* 動畫class結束 */
+
+    /*服務項目結束*/
+
+}
+
+
+
+@media only screen and (min-width: 1399px) {
+
+
+    /*關於我們開始*/
+    #aboutUs img {
+        padding-left : 0;
+        padding-right: 0;
+        max-width    : 90%;
+        max-height   : 100%;
+    }
+
+    #aboutUs .aboutUsImage {
+        display: block;
+    }
+
+    /*關於我們結束*/
+
+
+
+    /*服務項目開始*/
+    #serviceItems .containerBox {
+        width    : auto;
+        height   : 31vw;
+        
+        /* height: 37rem; 測試 保留 */
+    }
+
+    #serviceItems .contentSet picture,
+    #serviceItems .contentSet img {
+        /* width : 80px; */
+        width : 4vw;
+        height: auto;
+    }
+
+    #serviceItems .article1 p,
+    #serviceItems .article2 p {
+        /* font-size: 1.2rem !important; */
+        font-size: 1.1vw !important;
+    }
+
+    #serviceItems .article2 p {
+        background-color   : rgba(0, 0, 0, 0.4);
+        /* border          : solid 6px rgba(255, 255, 255, 0.411); */
+        border             : solid 6px rgb(30, 210, 255);
+        border-top         : 0px;
+        border-bottom      : 0px;
+        box-sizing         : border-box;
+    }
+
+    #serviceItems .article2 h3 {
+        width      : 18vw;
+        font-size  : 9vw;
+        font-weight: bold;
+        color      : rgb(255, 255, 255);
+    }
+
+    /* #serviceItems .contentSet:nth-child(odd)::after{
+        content:" ";
+        width: 10px;
+        height: 50px;
+        background-color: rgb(245, 4, 4);
+    } */
+
+    /*服務項目結束*/
+
+    /* 圖片間長條 */
+    #straightStrip {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#asdfgqwert{
+    scroll-behavior: smooth;
+    scroll-snap-align: left;
+}
+
+
+#asdfgqwert >div {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    width: 3400px;
+    height: 80px;
+    
+}
+#asdfgqwert >div>nav {
+    position: relative;
+    
+}
+
+#asdfgqwert >div>nav div {
+    position: absolute;
+
+    margin: auto 30px;
+    padding:  10px 5px;
+
+    width: 200px; 
+
+}

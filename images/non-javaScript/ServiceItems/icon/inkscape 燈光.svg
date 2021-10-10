@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="inkscape 燈光.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\燈光(加圓環 淺色底).webp"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#878787"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="-268.70058"
+     inkscape:cy="1168.1404"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g9668"
+     inkscape:lockguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9">
+    <rect
+       x="560"
+       y="680"
+       width="380"
+       height="180"
+       id="rect3204" />
+  </defs>
+  <g
+     id="g7538"
+     inkscape:label="燈光本體備用"
+     style="display:none">
+    <path
+       style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0,0 C 0,0 -10.07318,375.56027 250.03014,374.98562 509.92682,374.41143 500,0 500,0 h 50 C 550,0 565,426 249.93878,425.71997 -65,425.44005 -50,0 -50,0 Z"
+       id="path4947-7"
+       sodipodi:nodetypes="csccscc" />
+    <rect
+       style="fill:#ffffff"
+       id="rect7282-0"
+       width="640"
+       height="40"
+       x="-70"
+       y="-40"
+       ry="20" />
+  </g>
+  <ellipse
+     style="fill:none;stroke:#000000;stroke-width:50.00003201;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     id="path5310"
+     cx="-86.327034"
+     cy="-1269.2841"
+     transform="matrix(-0.75280185,0.65824719,-0.6570448,-0.75385153,0,0)"
+     rx="885.67249"
+     ry="885.86517" />
+  <g
+     inkscape:label="圖層 1"
+     id="layer1"
+     transform="translate(789.15275,567.10638)">
+    <g
+       id="g7744"
+       inkscape:label="本體"
+       transform="rotate(-139.13049,250,193.11005)"
+       style="fill:#000000">
+      <path
+         style="display:inline;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 0,0 C 0,0 -10.073182,375.56027 250.03014,374.98562 509.92682,374.41143 500,0 500,0 h 50 C 550,0 565,426 249.93878,425.71997 -65,425.44005 -50,0 -50,0 Z"
+         id="path4947"
+         sodipodi:nodetypes="csccscc" />
+      <rect
+         style="display:inline;fill:#000000;stroke-width:1.10414"
+         id="rect7282"
+         width="705.63538"
+         height="44.228966"
+         x="-99.835854"
+         y="-70.472"
+         ry="22.114483"
+         transform="matrix(0.99999958,9.1824959e-4,0.01834536,0.99983171,0,0)"
+         inkscape:export-filename="C:\Users\張榮展\Documents\GitHub\notes-1\實作\images\non-javaScript\ServiceItems\icon\燈光.webp"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <g
+         id="g9643"
+         inkscape:label="線香"
+         transform="rotate(0.25109181,204.20009,-1921.2855)"
+         style="fill:#000000">
+        <rect
+           style="display:none;fill:#000000"
+           id="rect8996"
+           width="40"
+           height="560"
+           x="-300.90381"
+           y="383.94913"
+           transform="rotate(-150.55236)"
+           ry="20" />
+        <rect
+           style="display:none;fill:#000000"
+           id="rect8998"
+           width="40"
+           height="560"
+           x="-184.03311"
+           y="160.37471"
+           transform="rotate(157.05108)"
+           ry="20" />
+        <rect
+           style="display:none;fill:#000000"
+           id="rect9000"
+           width="40"
+           height="560"
+           x="-280.353"
+           y="218.28078"
+           transform="rotate(-177.43799)"
+           ry="20" />
+        <g
+           id="g7776"
+           transform="matrix(-0.80208318,-0.71874525,0.7132543,-0.79899496,2258.7252,-693.58116)"
+           style="fill:#000000">
+          <rect
+             style="fill:#000000;stroke-width:0"
+             id="rect6645"
+             width="40"
+             height="440"
+             x="-1976.6636"
+             y="-991.44958"
+             transform="rotate(108.26427)"
+             ry="20" />
+          <rect
+             style="fill:#000000;stroke-width:0"
+             id="rect6669"
+             width="40"
+             height="440"
+             x="-1877.6912"
+             y="93.275162"
+             transform="rotate(139.13049)"
+             ry="20" />
+          <rect
+             style="fill:#000000;stroke-width:0"
+             id="rect6671"
+             width="40"
+             height="440"
+             x="-1272.9034"
+             y="895.80206"
+             transform="rotate(169.09971)"
+             ry="20" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         transform="rotate(139.13049,250,193.11005)"
+         id="text3202"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3204);fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g9668"
+       inkscape:label="底座"
+       transform="translate(1.8571425,1.8873774)">
+      <circle
+         style="fill:#000000"
+         id="path7562"
+         cx="275.53299"
+         cy="164.65091"
+         r="80"
+         inkscape:label="圓環外" />
+      <ellipse
+         style="fill:#ffffff;stroke-width:1.00359"
+         id="path7639"
+         cx="275.79868"
+         cy="165.90865"
+         rx="60.24609"
+         ry="60.184349"
+         transform="matrix(0.99999377,-0.0035291,-0.00353272,0.99999376,0,0)"
+         inkscape:label="圓環內" />
+      <rect
+         style="fill:#000000"
+         id="rect8038"
+         width="60"
+         height="420"
+         x="244.9901"
+         y="-224.99376"
+         ry="30" />
+      <rect
+         style="fill:#000000;stroke-width:0.916478"
+         id="rect8036"
+         width="620"
+         height="50.39587"
+         x="-29.999985"
+         y="-246.39587"
+         ry="25.197935"
+         inkscape:label="rect8036" />
+    </g>
+  </g>
+</svg>
