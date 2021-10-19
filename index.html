@@ -25,7 +25,7 @@
     <!-- 自製js -->
     <script async src="script/script.js"></script>
 
-    <script defer src="script/test.js"></script>
+    <!-- <script defer src="script/test.js"></script> -->
 </head>
 
 
@@ -181,7 +181,7 @@
                 ServiceItems</h3>
         </div>
         <div
-            class="containerBox container-fluid pb-5 text-light             d-xxl-flex pb-xxl-0 justify-content-xxl-between">
+            class="containerBox container-fluid mb-5 text-light             d-xxl-flex pb-xxl-0 justify-content-xxl-between">
 
 
 
@@ -191,7 +191,7 @@
 
 
                 <div class="article1 row col-12 pt-3 justify-content-center      pb-xxl-2">
-                    <picture class="d-block mt-0 mb-1 mx-auto p-0  ">
+                    <picture class="d-block mt-0 mb-2 mx-auto p-0  ">
                         <source srcset="images/non-javaScript/ServiceItems/icon/音響(深色底).webp"
                             media="(min-width: 992px)">
                         <img src="images/non-javaScript/ServiceItems/icon/音響(加圓環 深色底 ).webp" alt="提供服務音響圖示">
@@ -270,8 +270,52 @@
     </section>
     <!-- 提供服務結束 -->
 
+
+
     <!-- 歷年實績 -->
-    <section>
+    <section id="achievement">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="display-2 mb-5 ">歷年實績</h2>
+                </div>
+            </div>
+
+            <div id="carouselExampleControlsNoTouching" class=" ">
+                <div id="scrollLeftDiv" class="container-fluid ">
+                    <nav class=" row flex-nowrap ">
+                        <!-- 照片按鈕放置區 -->
+                        <!-- data-bs-target 對應要開啟的互動視窗id -->
+
+                        <!-- 別刪 修改時可用到 -->
+                        <!-- <div class="carousel-item text-center active">
+                        <button type="button" class="btn shadow-none " data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                            <img src="images/logo/第一次宴會.jpg" style="width: 200px; height: 200px;" alt="">
+                            <p>說明文字</p>
+                        </button>
+                    </div> -->
+                    </nav>
+
+                </div>
+                <div id="slideButton" class="mx-auto">
+                    <ul class="row flex-nowrap justify-content-center mt-3 px-4">
+                        <!-- <ol class="p-0"><button type="button" class="d-block p-0 m-0 "></button></ol> -->
+
+                    </ul>
+                </div>
+                <!-- 左右按鈕 -->
+                <!-- <button type="button" id="leftButton">左</button>
+                <button type="button" id="rightButton">右</button> -->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 歷年實績結束 -->
+
+    <!-- 歷年實績 備份 -->
+    <!-- <section>
         <div class="container py-5  bg-info">
             <div class="row text-center">
                 <div class="col-12">
@@ -282,22 +326,23 @@
 
             <div id="carouselExampleControlsNoTouching" class="carousel slide p-3" data-bs-interval="false">
                 <div class="resultsPhotoButton carousel-inner">
-                    <!-- 照片按鈕放置區 -->
-                    <!-- data-bs-target 對應要開啟的互動視窗id -->
 
-                    <!-- 別刪 修改時可用到 -->
-                    <!-- <div class="carousel-item text-center active">
+                    照片按鈕放置區
+                    data-bs-target 對應要開啟的互動視窗id
+
+                    別刪 修改時可用到
+                    <div class="carousel-item text-center active">
                         <button type="button" class="btn shadow-none " data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             <img src="images/logo/第一次宴會.jpg" style="width: 200px; height: 200px;" alt="">
                             <p>說明文字</p>
                         </button>
-                    </div> -->
+                    </div>
 
 
                 </div>
 
-                <!-- 左右按鈕 -->
+                左右按鈕
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -311,94 +356,8 @@
             </div>
         </div>
 
-    </section>
-    <!-- 歷年實績結束 -->
-
-
-    <!-- 聯絡我們開始 -->
-    <!--  
-    <section id="connection">
-        <div id="contactUsAnchorPoint" class="anchorPoint"></div>
-    <div class="container">
-        <div class="row bg-warning justify-content-center p-3">
-            <div class="row ">
-                
-                <div class="col-12 my-2 border border-3 rounded">
-                    <div class="text-center py-3 ">
-                        <p>聯絡我們手機</p>
-                    </div>
-                </div>
-
-                <div class="col-12 my-2 border border-3">
-                    <div class="text-center py-3 ">
-                        <p>聯絡我們line</p>
-                    </div>
-                </div>
-
-                <div class="col-12 my-2 border border-3">
-                    <div class="text-center py-3 ">
-                        <p>聯絡我們FB</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    </section>
-    -->
-    <!-- 聯絡我們結束 -->
-
-
-    <div id="asdfgqwert" style=" display: flex; flex-wrap: wrap;   width: auto; ">
-
-        <div >
-            <nav style=" display: flex;">
-
-                <!-- <div style="background-color: brown;left: 0px;"> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 250px;"> 4654654987
-                </div>
-                <div style="background-color: brown; left: 500px;  "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 750px;  "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 1000px;  "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 1250px;  "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 1500px;  "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 1750px;  "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 2000px;  "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 2250px;  "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 2500px; "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 2750px; "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 3000px; "> 4654654987
-                </div>
-                <div style="background-color: aqua; left: 3250px; "> 4654654987
-                </div>
-                <div style="background-color: brown; left: 3500px; "> 4654654987
-                </div> -->
-
-            </nav>
-        </div>
-        <div>
-            <button type="button" id="leftButton">左</button>
-            <button type="button" id="rightButton">右</button>
-        </div>
-    </div>
-
-
-
-
-
-
-
+    </section> -->
+    <!-- 歷年實績 備份 結束 -->
 
     <footer>
         <div class="container-fluid">

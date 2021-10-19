@@ -130,9 +130,87 @@ li {
 
 /*服務項目結束*/
 
+/* 歷年實績開始 */
+#achievement {}
+
+#carouselExampleControlsNoTouching {
+    position: relative;
+}
+
+/* 滾動條 */
+#scrollLeftDiv::-webkit-scrollbar {
+    display: none;
+}
+
+#scrollLeftDiv {
+    scroll-behavior : smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x      : scroll;
+
+    /* overflow寬度 */
+    width     : 350px;
+    height    : 100%;
+    border    : solid 1px rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+#scrollLeftDiv>nav {
+    height: 100%;
+}
+
+#scrollLeftDiv .navClass {
+
+    scroll-snap-align: center;
+
+    display        : block;
+    justify-content: center;
+    align-content  : center;
+
+    margin: 0px 25px;
+    width : 300px;
+}
+
+#scrollLeftDiv .navClass button {
+    position     : relative;
+    width        : 100%;
+    height       : 100%;
+    /* background: rgb(255, 137, 137); */
+}
+
+#scrollLeftDiv .navClass img {
+    object-fit: contain;
+    margin    : auto 0px;
+    width     : 100%;
+    height    : 100%;
+}
+
+/* 導航按鈕 開始 */
+
+#slideButton ul {
+    list-style: none;
+}
+
+#slideButton ol {
+    margin: 0px 10px;
+
+    width : 15px;
+    height: 15px;
+}
+
+#slideButton ol>button {
+    width        : 100%;
+    height       : 100%;
+    border-radius: 100%;
+
+    /* 把框線去掉 */
+    border: none;
+}
+
+/* 導航按鈕 結束 */
 
 
 
+/* 歷年實績結束 */
 
 .img-fluid {
     /* 蓋掉bs圖片的 max-width */
@@ -142,12 +220,10 @@ li {
 /* 歷年實積內容放置區 */
 .achievementContent {
     background-color: rgba(0, 0, 0, 0.500);
-
 }
 
 .achievementContent button {
     opacity: 1;
-
 }
 
 .modal-header {
@@ -179,7 +255,17 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
     display: none;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    #scrollLeftDiv {
+        /* overflow寬度 */
+        width: 100%;
+    }
+
+    #scrollLeftDiv .navClass {
+        margin: 0px 25px;
+        width : calc(100% / 3 - 50px);
+    }
+}
 
 /*等於1024*/
 @media only screen and (min-width: 992px) {
@@ -237,7 +323,7 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
         border       : 6px solid rgba(255, 255, 255, 0.192);
         border-top   : 0px;
         border-bottom: 0px;
-        
+
     }
 
     #serviceItems .article1 h3 {
@@ -257,7 +343,7 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
         border-top         : 0px;
         border-bottom      : 0px;
         box-sizing         : border-box;
-        
+
     }
 
     #serviceItems .article2 h3 {
@@ -350,6 +436,9 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
     /*服務項目結束*/
 
+    /* 歷年實績開始 */
+
+    /* 歷年實績結束 */
 }
 
 
@@ -375,9 +464,9 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
     /*服務項目開始*/
     #serviceItems .containerBox {
-        width    : auto;
-        height   : 31vw;
-        
+        width : auto;
+        height: 31vw;
+
         /* height: 37rem; 測試 保留 */
     }
 
@@ -419,50 +508,12 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
     /*服務項目結束*/
 
+    /* 歷年實績開始 */
+    
+    /* 歷年實績結束 */
+
     /* 圖片間長條 */
     #straightStrip {
         display: block;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#asdfgqwert{
-    scroll-behavior: smooth;
-    scroll-snap-align: left;
-}
-
-
-#asdfgqwert >div {
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-
-    width: 3400px;
-    height: 80px;
-    
-}
-#asdfgqwert >div>nav {
-    position: relative;
-    
-}
-
-#asdfgqwert >div>nav div {
-    position: absolute;
-
-    margin: auto 30px;
-    padding:  10px 5px;
-
-    width: 200px; 
-
 }
