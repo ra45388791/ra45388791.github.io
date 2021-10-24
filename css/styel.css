@@ -209,7 +209,8 @@ header .headerImageBox {
 }
 
 #scrollLeftDiv .navClass img {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center center;
     margin    : 0px 0px;
     width     : 100%;
     height    : 100%;
@@ -239,11 +240,7 @@ header .headerImageBox {
     background-repeat: no-repeat;
 }
 
-#scrollLeftDiv .activityType div>p {
-    /* margin  : 0px 50px; */
-    /* color: rgb(255, 166, 0); */
-    /* color   : rgb(0, 255, 21); */
-}
+
 
 #scrollLeftDiv .activityNarrate {
     display        : flex;
@@ -314,8 +311,7 @@ header .headerImageBox {
 
 /* 歷年實積內容放置區結束 */
 
-/*背板動畫*/
-
+/*歷年實積背板動畫 開始*/
 #achievement .bgColorAnime {
     overflow-x: hidden;
 
@@ -334,11 +330,12 @@ header .headerImageBox {
     left    : 0px;
     top     : 0px;
 
-    width     : 1000%;
+    width     : 100%;
     height    : 100%;
-    background: linear-gradient(90deg, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00);
+    background: linear-gradient(90deg, #00ffff, #fbff00);
 }
 
+/*歷年實積背板動畫 結束*/
 
 
 
@@ -567,7 +564,31 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
     /*服務項目結束*/
 
+
     /* 歷年實績開始 */
+
+    /*歷年實積背板動畫 開始*/
+
+    #achievement .bgColorAnime>div {
+        width     : 200%;
+        background: linear-gradient(90deg, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff);
+        /* background: linear-gradient(90deg, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00, #00ffff, #fbff00); */
+
+        animation: achievementAnime 5s cubic-bezier(0, 0, 0, 0) infinite;
+    }
+
+    @keyframes achievementAnime {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+    /*歷年實積背板動畫 結束*/
+
     /* 歷年實績結束 */
 }
 
