@@ -9,22 +9,35 @@
 
     <link rel="stylesheet" href="css/styel.css">
 
-
     <script defer src="script/vue.js"></script>
     <script defer src="script/index.js"></script>
 </head>
 
 <body>
-    <select id="isTrueOrFalse">
-        <option value="" selected>--請選擇--</option>
-        <option value="true">true</option>
-        <option value="false">false</option>
-    </select>
 
-    <div id="app" style="margin-bottom: 20px;">
-        {{ message }}
+
+
+
+    <div id="app">
+
+        <div class="inputclass">
+            <select v-on:change="vueSelect" v-model="isTrueOrFalse">
+                <option value="" selected>--請選擇--</option>
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+            <!-- input輸入和點擊監聽事件 -->
+            <input v-model="vueInput" type='type'>
+            <input v-on:click="appbtn" type="button" value="送出">
+        </div>
+
+        <span v-bind:class="color">{{ message }}</span>
+
         <!-- v-html使用此模版寫法傳進來的字串會以html元素格式呈現 -->
         <div v-html="divdom"></div>
+
+        <span>{{ message2.split('').reverse().join('') }}</span>
+        <div v-if="seeIf" v-bind:class="color">測試 if 區域是否被看到</div>
     </div>
 
 
