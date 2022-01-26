@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styel.css">
+    <!-- ajax -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script defer src="script/vue.js"></script>
+    <script defer src="script/index.js"></script>
+</head>
+
+<body style="background-color: dimgrey;">
+
+    <div id="app">
+        <!-- 選單 -->
+        <div style="text-align: start; margin: auto auto;">
+            <button @click="vueDomShow = 1"> 1 </button>
+            <button @click="vueDomShow = 2"> 2 </button>
+        </div>
+
+        <!-- 1號頁面操作區 -->
+        <template v-if="vueDomShow === 1">
+            <!-- 輸入表單區 -->
+            <div class="inputclass">
+                <select v-on:change="vueSelect" v-model="isTrueOrFalse">
+                    <option value="" selected>--請選擇--</option>
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+                <!-- input輸入和點擊監聽事件 -->
+                <input v-on:keydown.enter="appbtn" v-model="vueInput" type='type' name="username">
+                <input v-on:click="appbtn" type="button" value="送出">
+                <input v-on:input="vueColorF" v-model="vueColorData" type="color">
+                <input @click="testBtn" type="button" value="測試用按鈕">
+                <div @click="testBtn">3425324534534</div>
+            </div>
+
+            <!-- 操作class 套用css變色 -->
+            <span v-bind:class="color">{{ message }}</span>
+            <span v-bind:class="color">{{ a }}</span>
+
+            <!-- v-html使用此模版寫法傳進來的字串會以html元素格式呈現 -->
+            <div v-html="divdom"></div>
+
+            <!-- 反轉字串 -->
+            <span>{{ reversedMessage }}</span>
+
+            <!-- if測試 -->
+            <div v-if="seeIf === '' " v-bind:class="color">測試 if 區域是否被看到</div>
+            <div v-else-if='seeIf === true'> if為true </div>
+            <div v-else-if='seeIf === false'> if為false </div>
+
+            <!-- for1 陣列for測試  :  for2物件for測試 -->
+            <div>
+                <ul>
+                    <li v-for="vueForItem1,index in vueForItems1" v-bind:key="index">
+                        {{index}}:{{vueForItem1.forMessage}}
+                    </li>
+                </ul>
+                <ul>
+                    <li v-for="vueForItem2, key in vueForItems2" v-bind:key="key">
+                        {{ key }} : {{vueForItem2}}
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 色彩動態渲染測試 -->
+            <div v-bind:style="vueBgColor"
+                style="margin: auto; width: 13em; height: 50px; color: white; border: black 1px solid; ">
+                測試背景色彩跟著表單變色
+            </div>
+
+
+        </template>
+
+        <!-- 2號頁面 -->
+        <template v-else if="2">
+            <div> vueDomShow屬性為 : false </div>
+
+            <form method="" action="">
+                <input type="text" name="keyValue" value="this is keyValue">
+                <input type="button" target="" @click="" value="提交">
+            </form>
+            <div>{{formAjaxGet}}</div>
+            <button @click="testForm">AJAX按鈕</button>
+        </template>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
