@@ -1,0 +1,19 @@
+{
+  "name": "Exercise3_nodeHeroku",
+  "version": "1.0.0",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node HelloWorld.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": "14.15.1"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
