@@ -84,13 +84,17 @@
             <div> vueDomShow屬性為 : false </div>
 
             <div v-html='formAjaxGet'></div>
-            <button @click="testForm">英文測試按鈕</button>
-            <button @click="testForm('lang=zh')">中文測試按鈕按鈕</button>
+            <div>
+                <button @click="testForm">英文測試按鈕</button>
+            </div>
+            <div>
+                <button @click="testForm('lang=zh')">中文測試按鈕按鈕</button>
+            </div>
 
-            <form method="" action="">
+            <!-- <form method="" action="">
                 <input type="text" name="keyValue" value="this is keyValue">
                 <input type="button" target="" @click="" value="提交">
-            </form>
+            </form> -->
         </template>
 
     </div>
