@@ -98,7 +98,9 @@ let app = new Vue({
         testForm: function (event) {
             // let form = event.target.parentNode;
             this.formAjaxGet = '等待資料...';
-            const url = axios.get('https://hidden-escarpment-17052.herokuapp.com/');
+
+            const url = axios.get(`https://hidden-escarpment-17052.herokuapp.com/?${event}`);
+            // const url = axios.get(`http://localhost:5000/?${event}`);
             url.then((res) => {
                 console.log('取得資料原型');
                 console.log(res);
