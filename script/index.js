@@ -118,8 +118,8 @@ let app = new Vue({
         },
         formSubmit: function (e) {
 
-            // const url = `https://hidden-escarpment-17052.herokuapp.com/?${event}`;
-            const url1 = `http://localhost:5000/`;
+            const url = `https://hidden-escarpment-17052.herokuapp.com`;
+            // const url1 = `http://localhost:5000/`;
             let formData = new FormData();
             formData.append('username', e.target.username.value);
             formData.append('password', e.target.password.value);
@@ -132,8 +132,7 @@ let app = new Vue({
                 data: formData
             })
                 .then(function (res) {
-                    let appThis = app;
-                    console.log(appThis);
+                    let appThis = app;              //指向vue axios會把this指向變成windows
 
                     appThis.loginPage = res.data;
                     appThis.loginShow = false;
