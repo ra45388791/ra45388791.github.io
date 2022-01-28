@@ -118,7 +118,7 @@ let app = new Vue({
         },
         formSubmit: function (e) {
 
-            const url = `https://hidden-escarpment-17052.herokuapp.com`;
+            const url1 = `https://hidden-escarpment-17052.herokuapp.com`;
             // const url1 = `http://localhost:5000/`;
             let formData = new FormData();
             formData.append('username', e.target.username.value);
