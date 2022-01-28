@@ -22,10 +22,11 @@
         <div style="text-align: start; margin: auto auto;">
             <button @click="vueDomShow = 1"> 1 </button>
             <button @click="vueDomShow = 2"> 2 </button>
+            <button @click="vueDomShow = 3"> 3 </button>
         </div>
 
         <!-- 1號頁面操作區 -->
-        <template v-if="vueDomShow === 1">
+        <template v-if="vueDomShow === 1 ">
             <!-- 輸入表單區 -->
             <div class="inputclass">
                 <select v-on:change="vueSelect" v-model="isTrueOrFalse">
@@ -79,22 +80,42 @@
 
         </template>
 
-        <!-- 2號頁面 -->
-        <template v-else if="2">
-            <div> vueDomShow屬性為 : false </div>
+        <template v-else-if="vueDomShow === 2">
+            <!-- 2號頁面 -->
+            <div>此頁為測試node.js撈資料</div>
 
             <div v-html='formAjaxGet'></div>
             <div>
-                <button @click="testForm">英文測試按鈕</button>
+                <button @click="nodeJsGet">英文測試按鈕</button>
             </div>
             <div>
-                <button @click="testForm('lang=zh')">中文測試按鈕按鈕</button>
+                <button @click="nodeJsGet('lang=zh')">中文測試按鈕按鈕</button>
             </div>
 
-            <!-- <form method="" action="">
-                <input type="text" name="keyValue" value="this is keyValue">
-                <input type="button" target="" @click="" value="提交">
-            </form> -->
+
+        </template>
+
+
+        <template v-else-if="vueDomShow === 3">
+            <div>此頁為登入頁面</div>
+
+            <div v-html="loginPage"></div>
+            <button v-show="loginButton" @click="loginButton = false; loginShow = true; loginPage = '' ">返回登入頁面</button>
+
+            <div v-show="loginShow">
+                <form method="POST" action="/" @submit.prevent="formSubmit">
+                    <div>
+                        <label for="username">帳號</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div>
+                        <label for="password">密碼</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <input type="submit" value="提交" name="sub">
+                    <!-- <button >提交</button> -->
+                </form>
+            </div>
         </template>
 
     </div>

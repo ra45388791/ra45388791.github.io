@@ -1,5 +1,5 @@
 let data = {
-    vueDomShow: 2,
+    vueDomShow: 3,
     isTrueOrFalse: '',                       //v-model 選項輸入測試
     message: '---請選擇---',                    //第一行訊息
     message2: '倒轉插值',                   //倒轉插值
@@ -23,10 +23,14 @@ let data = {
     vueColorData: '',                           //變色表單 
     vueBgColor: 'background-color: #ffffff;',   //變色區域
 
-    //2號頁
+    //2號頁 node.js
     formItem: '',
-    formAjaxGet: '按下按鈕至後端取資料'
+    formAjaxGet: '按下按鈕至後端取資料',
 
+    //3號頁 登入
+    loginPage: '',
+    loginButton: false,
+    loginShow: true,
 }
 // 阻止修改現有屬性 指定某個屬性不能被修改
 // Object.freeze(data);
@@ -95,7 +99,7 @@ let app = new Vue({
         testBtn: function (btx) {
             console.log(btx.target.outerText);
         },
-        testForm: function (event) {
+        nodeJsGet: function (event) {
             // let form = event.target.parentNode;
             this.formAjaxGet = '等待資料...';
 
@@ -111,12 +115,35 @@ let app = new Vue({
             }).catch((err) => {
                 console.log(err);
             });
+        },
+        formSubmit: function (e) {
 
+            // const url = `https://hidden-escarpment-17052.herokuapp.com/?${event}`;
+            const url1 = `http://localhost:5000/`;
+            let formData = new FormData();
+            formData.append('username', e.target.username.value);
+            formData.append('password', e.target.password.value);
+            // console.log(formData);
 
+            axios({
+                method: 'POST',
+                url: url1,
+                headers: { "Content-Type": "multipart/form-data" },
+                data: formData
+            })
+                .then(function (res) {
+                    let appThis = app;
+                    console.log(appThis);
 
+                    appThis.loginPage = res.data;
+                    appThis.loginShow = false;
+                    appThis.loginButton = true;
+                })
+                .catch(function (err) {
+                    console.log(err);
 
-            // console.log(form.keyValue.value);
-            // form.submit();   //提交
+                });
+
         }
     },
     computed: {
