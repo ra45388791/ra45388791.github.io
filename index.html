@@ -100,6 +100,7 @@
             <div>此頁為登入頁面</div>
 
             <div v-html="loginPage"></div>
+
             <button v-show="loginButton" @click="loginButton = false; loginShow = true; loginPage = '' ">返回登入頁面</button>
 
             <div v-show="loginShow">

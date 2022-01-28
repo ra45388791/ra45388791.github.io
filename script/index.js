@@ -43,6 +43,8 @@ let app = new Vue({
         and: 1324324
     },
     created() {
+
+
         //實例創造時會執行的
 
         //修改第1筆陣列資料
@@ -101,10 +103,16 @@ let app = new Vue({
         },
         nodeJsGet: function (event) {
             // let form = event.target.parentNode;
-            this.formAjaxGet = '等待資料...';
+            let url;
+            if (location.href === 'http://localhost:5500/') {
+                url = axios.get(`http://localhost:5000/?${event}`);
+            } else {
+                url = axios.get(`https://hidden-escarpment-17052.herokuapp.com/?${event}`);
+            }
 
-            const url = axios.get(`https://hidden-escarpment-17052.herokuapp.com/?${event}`);
-            // const url = axios.get(`http://localhost:5000/?${event}`);
+
+            this.formAjaxGet = '等待資料...';
+            //!網址記得換
             url.then((res) => {
                 console.log('取得資料原型');
                 console.log(res);
@@ -117,13 +125,21 @@ let app = new Vue({
             });
         },
         formSubmit: function (e) {
+            //!網址記得換
+            let url1;
+            if (location.href === 'http://localhost:5500/') {
+                url1 = `http://localhost:5000/`;
+            } else {
+                url1 = `https://hidden-escarpment-17052.herokuapp.com/`;
+            }
 
-            const url1 = `https://hidden-escarpment-17052.herokuapp.com`;
-            // const url1 = `http://localhost:5000/`;
+
             let formData = new FormData();
             formData.append('username', e.target.username.value);
             formData.append('password', e.target.password.value);
-            // console.log(formData);
+
+            this.loginShow = false;                 //登入畫面隱藏
+            this.loginPage = '<div>等待後端回應...</div>';
 
             axios({
                 method: 'POST',
@@ -134,15 +150,12 @@ let app = new Vue({
                 .then(function (res) {
                     let appThis = app;              //指向vue axios會把this指向變成windows
 
-                    appThis.loginPage = res.data;
-                    appThis.loginShow = false;
-                    appThis.loginButton = true;
+                    appThis.loginButton = true;        //顯示返回按鈕
+                    appThis.loginPage = res.data;   //替換成回傳資料
                 })
                 .catch(function (err) {
                     console.log(err);
-
                 });
-
         }
     },
     computed: {
