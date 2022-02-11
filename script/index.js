@@ -5,7 +5,10 @@ data = {
         count: 0
     },
     gitImage: "",
-    htmlContent: "",
+    htmlContentAni: "",
+    axiosResData: ""
+
+
 
 };
 
@@ -48,7 +51,7 @@ let app1 = new Vue({
                 }, parseInt(Math.random() * 200));
             } else if (count === arrTitle.length) {
 
-                this.htmlContent = "animation: buttonBoxOpacity 1.5s cubic-bezier(0.42, 0, 0.34, 0.96) forwards; ";
+                this.htmlContentAni = "animation: buttonBoxOpacity 1.5s cubic-bezier(0.42, 0, 0.34, 0.96) forwards; ";
 
             }
         },
@@ -71,8 +74,10 @@ let app1 = new Vue({
                 then((e) => {
                     if (e.request.responseURL !== url) {
                         location.href = e.request.responseURL;
+                    } else {
+                        this.axiosResData = e.data;
                     }
-                    console.log('回傳主體' + e);
+                    console.log(e);
                     console.log('回傳網址' + e.request.responseURL);
                 }).
                 catch((err) => {

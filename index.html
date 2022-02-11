@@ -51,7 +51,7 @@
             </div>
 
             <div class="row my-5  text-center justify-content-around">
-                <button :style="htmlContent"
+                <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0 ">
                     <div>
                         <h2 class="display-4 fw-bold" @click="changeAbouMyPage">我的履歷</h2>
@@ -59,7 +59,7 @@
                     </div>
                 </button>
 
-                <button :style="htmlContent"
+                <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0" type="button"
                     data-bs-toggle="modal" data-bs-target="#RESTfulButton">
                     <div>
@@ -72,7 +72,7 @@
 
             <div class="row my-5 text-center justify-content-around">
 
-                <button :style="htmlContent"
+                <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 px-0"
                     @click="changeVuePage">
                     <div class="d-flex justify-content-center align-items-center py-3">
@@ -80,7 +80,7 @@
                         <h2 class="d-block display-4 fw-bold">vue練習</h2>
                     </div>
                 </button>
-                <button :style="htmlContent" class="buttonBox nullBox col-5 py-3">
+                <button :style="htmlContentAni" class="buttonBox nullBox col-5 py-3">
 
                 </button>
             </div>
@@ -97,7 +97,8 @@
                         <!-- 表單 -->
                         <div class="text-center">
                             <form method="post" action="/" class="row gy-3 flex-wrap" @submit.prevent="submitLogin">
-                                <div class="col-12 gx">
+                                <div v-html="axiosResData" style="color:red"></div>
+                                <div class="col-12">
                                     <label for="username" class="col-12 ">帳號</label>
                                     <input type="text" name="username" placeholder="username">
                                 </div>
