@@ -3,17 +3,29 @@ data = {
         Title: '',
         arrTitle: '歡迎來到_張榮展_的GitHub'.split(''),
         count: 0
-    }
+    },
+    gitImage: "",
+    htmlContent: "",
+
 };
 
 let app1 = new Vue({
     el: '#VueAppLication',
     data: data,
     mounted: function () {
+
         //等到畫面全部渲染完成時才執行
         this.$nextTick(function () {
-            this.myGitH1();
+            let vm = this;
+            setTimeout(function () {
+                vm.gitImage = 'animation: gitCatOpacity 2s ease-in-out forwards;'
+                setTimeout(function () {
+                    vm.myGitH1();
+                }, 250);
+            }, 50)
         })
+
+
     },
     methods: {
 
@@ -34,10 +46,43 @@ let app1 = new Vue({
                     //重新觸發
                     vm.myGitH1();
                 }, parseInt(Math.random() * 200));
+            } else if (count === arrTitle.length) {
+
+                this.htmlContent = "animation: buttonBoxOpacity 1.5s cubic-bezier(0.42, 0, 0.34, 0.96) forwards; ";
+
             }
         },
+        submitLogin: function (e) {
+            // const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
+            url = `http://localhost:5000/?gitUser=orange`;
+
+
+            let formData = new FormData();
+            formData.append('username', e.target.username.value);
+            formData.append('password', e.target.password.value);
+
+
+            axios({
+                method: 'POST',
+                url: url,
+                headers: { "Content-Type": "multipart/form-data" },
+                data: formData
+            }).
+                then((e) => {
+                    if (e.request.responseURL !== url) {
+                        location.href = e.request.responseURL;
+                    }
+                    console.log('回傳主體' + e);
+                    console.log('回傳網址' + e.request.responseURL);
+                }).
+                catch((err) => {
+                    throw new Error(err);
+                })
+
+
+        },
         changeAbouMyPage: function () {
-            location.href = '我的履歷/index.html';
+            location.href = 'myResume/index.html';
         },
         changeVuePage: function () {
             location.href = 'vue練習/index.html';
