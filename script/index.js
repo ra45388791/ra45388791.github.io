@@ -53,8 +53,8 @@ let app1 = new Vue({
             }
         },
         submitLogin: function (e) {
-            // const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
-            url = `http://localhost:5000/?gitUser=orange`;
+            const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
+            // url = `http://localhost:5000/?gitUser=orange`;
 
 
             let formData = new FormData();
