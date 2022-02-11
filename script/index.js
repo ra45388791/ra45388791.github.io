@@ -21,8 +21,8 @@ let app1 = new Vue({
                 vm.gitImage = 'animation: gitCatOpacity 2s ease-in-out forwards;'
                 setTimeout(function () {
                     vm.myGitH1();
-                }, 250);
-            }, 50)
+                }, 2200);
+            }, 500)
         })
 
 
