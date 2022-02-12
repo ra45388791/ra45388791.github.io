@@ -38,17 +38,17 @@
 <body>
 
     <header id="VueAppLication">
-        <div class="container px-4 ">
-            <div id="gitIcon">
-                <img src="/images/gitcat.svg" :style="gitImage" class="gitCat" alt="">
+        <div id="gitIcon">
+            <img src="/images/gitcat.svg" :style="gitImage" class="gitCat" alt="">
+        </div>
+        <div class="container d-flex flex-column justify-content-center  px-4 ">
+
+
+            <div class="row mb-3  text-center text-white ">
+                <!-- <h1  >歡迎來到 張榮展 的GitHub</h1> -->
+                <h1>{{h1Updata}}</h1>
             </div>
 
-            <div>
-                <div class="row mt-5 text-center text-white ">
-                    <!-- <h1  >歡迎來到 張榮展 的GitHub</h1> -->
-                    <h1>{{h1Updata}}</h1>
-                </div>
-            </div>
 
             <div class="row my-5  text-center justify-content-around">
                 <button :style="htmlContentAni"

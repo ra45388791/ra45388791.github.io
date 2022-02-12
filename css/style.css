@@ -4,35 +4,40 @@ h1 {
 }
 
 body {
+
     background-color: rgb(0, 0, 0);
+
 }
 
 header {
     position: relative;
-    height  : 100%;
+}
+
+.container {
+    width : 100vw;
+    height: 100vh;
 }
 
 #gitIcon {
     z-index : -1;
-    position: fixed;
-    left    : 0px;
-    top     : -3rem;
+    display : flex;
+    position: absolute;
+    left    : 0;
+    top     : 0;
+    width   : 100vw;
+    height  : 100vh;
 
-    width : 100%;
-    height: calc(100% + 3rem);
 }
 
 #gitIcon .gitCat {
-    /* position: absolute; */
-    display: block;
+    position: absolute;
+    left    : calc(50% - (50vw - 50vh - 2.5%));
+    top     : calc(50% - (50vw - 50vh - 2.5%));
 
-    margin: 6rem auto;
+    width      : calc(100vw - 100vh - 5%);
+ 
 
-    width       : 45%;
-    height      : auto;
-    opacity     : 0;
-    /* animation: gitCatOpacity 3s ease-in-out forwards; */
-
+    opacity: 0;
 }
 
 @keyframes gitCatOpacity {
@@ -57,7 +62,6 @@ header {
 .buttonBox {
     overflow: hidden;
 
-    /* width        : 0px; */
     height       : 156px;
     color        : #fff;
     border-top   : none;
@@ -80,7 +84,7 @@ header {
 }
 
 .buttonBox div {
-    min-width: 389px;
+    min-width : 389px;
     /* height : 100%; */
 }
 
