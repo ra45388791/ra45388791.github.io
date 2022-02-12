@@ -37,15 +37,16 @@
 <body>
     <nav class="navbar navbar-light" style="background-color: #ffffff;">
         <div class="container-fluid justify-content-center">
-            <div class="lgNavbarNav row justify-content-center">
-                <div class="navbar-collapse">
+            <div class="NavbarNav">
+                <div class="navbar-collapse px-0 d-flex justify-content-center">
+                    <img src="images/左括號.png" alt="" srcset="">
                     <ul class="navbar-nav d-flex flex-row justify-content-center fw-bold ">
 
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" aria-current="page" href="#">關於我</a>
+                            <a class="nav-link " aria-current="page" href="#">關於我</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="#">我會甚麼?</a>
+                            <a class="nav-link" href="#"> 我會甚麼?</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="#">自傳</a>
@@ -54,6 +55,7 @@
                             <a class="nav-link">待定</a>
                         </li>
                     </ul>
+                    <img src="images/右括號.png" alt="" srcset="">
                 </div>
             </div>
 
@@ -91,15 +93,16 @@
     <!--                               技術                               -->
     <!-- **************************************************************** -->
 
-    <section>
-        <div class="container">
-            <div class="row justify-content-center text-center">
+    <section id="technology">
+        <div class="container d-flex justify-content-center">
+            <div class="row col-12 justify-content-center text-center">
                 <div class="mb-5">
-                    <h2 class="display-2 fw-bold text-dark">我會甚麼技術?</h2>
+                    <h2 class="pb-3 display-2 fw-bold border-bottom border-3 text-dark">我會甚麼技術?</h2>
 
                 </div>
                 <div class="row pb-4 justify-content-around">
-                    <h3 class="display-5 fw-bold text-dark">前端</h3>
+                    <h3 class="pb-3 display-5 fw-bold text-dark">前端</h3>
+
                     <div class=" col-12 col-md-6 col-lg-4">
                         <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
                             <div class="imgBox d-flex justify-content-center">
@@ -141,9 +144,6 @@
                         </div>
                     </div>
 
-
-                    <!-- ************************************************************** -->
-
                     <div class=" col-12 col-md-6 col-lg-4">
                         <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
                             <div class="imgBox d-flex justify-content-center">
@@ -151,10 +151,10 @@
                             </div>
 
                             <div class="card-body">
-                                <h5 class="card-title">SootStrap</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <h5 class="card-title">BootStrap</h5>
+                                <!-- !color:#7511F6 -->
+                                <p class="card-text">針對不同元件客製化修改成適合該網頁的內容。<span
+                                        style="color:#7511F6"></br>本網頁使用BootStrap製作。</span> </p>
                             </div>
                         </div>
                     </div>
@@ -167,9 +167,9 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">Vue.js</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <!-- !color:#41B883 -->
+                                <p class="card-text">目前正在學習中，知道基本使用方法，組件使用方式，能夠製作小型專案。<span
+                                        style="color:#41B883"></br>本網頁使用Vue製作</span> </p>
                             </div>
                         </div>
                     </div>
@@ -182,9 +182,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">RWD設計</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text">使用css對不同裝置的尺寸進行動態修改，達成符合不同裝置都能使用的效果。</p>
                             </div>
                         </div>
                     </div>
@@ -197,9 +195,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">RESTful / Api</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text">使用GET、POST、PUT、DELETE等方法對API接口發送請求。</p>
                             </div>
                         </div>
                     </div>
@@ -213,9 +209,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">AJAX</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text">使用RESTful對API接口取得想要的資料後單獨渲染該資料，而不對整個網頁進行重整。</p>
                             </div>
                         </div>
                     </div>
@@ -228,9 +222,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">git</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text">目前會基本操作init、add、commit、push等。</p>
                             </div>
                         </div>
                     </div>
@@ -250,23 +242,7 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">Node.js</h5>
-                                <p class="card-text">能使用原生javascript對頁面元素直接操作，處理由html表單提交的資料等。重視程式的易讀性。</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <!--! p-4 -->
-                            <div class="imgBox p-4 d-flex justify-content-center">
-                                <img src="images/npm.png" class="" style="" alt="...">
-                            </div>
-
-
-                            <div class="card-body">
-                                <h5 class="card-title">npm</h5>
-                                <p class="card-text">能使用原生javascript對頁面元素直接操作，處理由html表單提交的資料等。重視程式的易讀性。</p>
+                                <p class="card-text">可以製作簡單的接口與前端溝通。</p>
                             </div>
                         </div>
                     </div>
@@ -278,10 +254,9 @@
                                 <img src="images/MySQL.png" class="" alt="...">
                             </div>
 
-
                             <div class="card-body">
                                 <h5 class="card-title">MySQL</h5>
-                                <p class="card-text">能使用原生javascript對頁面元素直接操作，處理由html表單提交的資料等。重視程式的易讀性。</p>
+                                <p class="card-text">知道基本語法、如何搜尋、條件搜尋、插入資料等</p>
                             </div>
                         </div>
                     </div>
@@ -294,7 +269,80 @@
 
                             <div class="card-body">
                                 <h5 class="card-title">heroku</h5>
-                                <p class="card-text">能使用原生javascript對頁面元素直接操作，處理由html表單提交的資料等。重視程式的易讀性。</p>
+                                <p class="card-text">用來運算的雲端平台，建置將前兩項Node.js與MySQL的平台。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
+                            <!--! p-4 -->
+                            <div class="imgBox p-4 d-flex justify-content-center">
+                                <img src="images/npm.png" class="" style="" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">npm</h5>
+                                <p class="card-text">用來建置node.js第三方api的工具。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ****************************** 其他 ****************************** -->
+                <div class="row pb-4 justify-content-around">
+                    <h3 class="display-5 fw-bold text-dark">其他</h3>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
+                            <div class="imgBox  d-flex justify-content-center">
+                                <img src="images/office365.png" class="" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">微軟 office365</h5>
+                                <ol class="card-text">
+                                    <li>Word</li>
+                                    <li>PowerPoint</li>
+                                    <li>Excel</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
+                            <div class="imgBox  d-flex justify-content-center">
+                                <img src="images/adobe.jpg" class="" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">adobe</h5>
+                                <ol class="card-text">
+                                    <li>Photoshop</li>
+                                    <li>Dreamweaver</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
+                            <div class="imgBox  d-flex justify-content-center">
+                                <img src="images/computer.gif" class="" alt="...">
+                            </div>
+                            <!-- ! pt-0 pb-0 -->
+                            <div class="card-body pt-0 pb-0">
+                                <h5 class="card-title">其他</h5>
+                                <ol class="card-text">
+                                    <li>虛擬機:VirtualBox</li>
+                                    <li>遊戲引擎:Unity</li>
+                                    <li>3D建模:blender</li>
+                                    <li>繪圖:Krita</li>
+                                    <li>SVG:inkscape</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -304,15 +352,114 @@
 
 
                 </div>
-
-
-
-
-
             </div>
         </div>
     </section>
 
+    <!-- **************************************************************** -->
+    <!--                               自傳                               -->
+    <!-- **************************************************************** -->
+
+    <section id="autobiography">
+        <div class="container">
+            <div class="d-flex flex-column text-center">
+
+                <div class="row mb-5">
+                    <h2 class="pb-3 display-2 fw-bold border-bottom border-3 text-dark">自傳</h2>
+                </div>
+                <!-- 關於我 -->
+                <div class="textBox row mb-5 justify-content-center align-items-center">
+                    <div
+                        class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+                        <h3 class="mb-4 display-6 fw-bold">關於我</h3>
+                        <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                            我來自一個平凡家庭，但我有不平凡的成長經歷，我畢業於台北城市科技大學，我是一名樂觀上進有耐心的人，對於任何事情總是保持著認真的態度面對。
+
+                        </p>
+                    </div>
+
+                    <div class="col-10 col-lg-5 text-center">
+                        <!-- ! width:300 -->
+                        <img src="/images/全身照.jpg" style="width: 300px;" alt="">
+                        <p class="photoDescription text-center pt-1">畢業全身照</p>
+                    </div>
+                </div>
+
+
+                <!-- ! 偶數 flex反轉 -->
+                <div
+                    class="textBox row mb-5 flex-column-reverse align-items-center flex-lg-row justify-content-lg-center">
+                    <div class="col-10 col-lg-5">
+                        <img src="images/憲兵指揮部.jpg" alt="">
+                        <p class="photoDescription text-center pt-1">憲兵指揮部89周年慶</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+                        <h3 class="mb-4 display-6 fw-bold">成長經歷</h3>
+                        <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                            在成長的過程中我父親常帶我出門和他工作，而因為這份工作的性質特殊能讓我在求學階段就見識到這個世界的不同樣貌，我印象最深的是我曾看過一間公司的座右銘『今天的小錯，是明天的災難⠀』。
+                            我認為這句話十分受用，也讓我在之後不管生活還是工作上都時常保持著注意細節。
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 大學 -->
+                <div class="textBox row mb-5 justify-content-center align-items-center">
+                    <div
+                        class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+                        <h3 class="mb-4 display-6 fw-bold">大學時期</h3>
+                        <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                            在大學四年的日子裡我過得相當充實且快樂，也認識了幾位知心好友，影響我最深的是畢業專題製作的那段日子，我分配到的工作是負責撰寫程式，可以說是整個小組專題的核心所在，所以我當時不分日夜的撰寫程式，最終成功拿到這門學分，也因此打下了我的程式基礎。
+                        </p>
+                    </div>
+
+                    <div class="col-10 col-lg-5 text-center">
+                        <img src="images/畢業專題.jpg" alt="">
+                        <p class="photoDescription text-center pt-1">畢業專題截圖</p>
+                    </div>
+                </div>
+
+                <!-- 高中 -->
+                <!-- ! 偶數 flex反轉 -->
+                <div
+                    class="textBox row mb-5 flex-column-reverse align-items-center flex-lg-row justify-content-lg-center">
+                    <div class="col-10 col-lg-5">
+                        <!-- ! width:300 -->
+                        <img src="images/熊武士.png" style="width: 300px;" alt="">
+                        <p class="photoDescription text-center pt-1">熊武士Logo</p>
+                    </div>
+                    <div
+                        class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+                        <h3 class="mb-4 display-6 fw-bold">高中時期</h3>
+                        <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                            高中時曾代表校隊參加全國電子競技比賽，可惜雖然我們從入圍賽打入BO5階段時就敗下陣來，但這段時間讓我學到很多東西，像是如何在高壓環境下執行團隊戰術，以及如何與隊友配合達成目標。
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- 大學 -->
+                <div class="textBox row mb-5 justify-content-center align-items-center">
+                    <div
+                        class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+                        <h3 class="mb-4 display-6 fw-bold">未來展望</h3>
+                        <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                            從大學畢業後我因為家業需求而開始接觸前端技術，在學習的過程我發現我對於這門技術的熱情高得超乎我的想像，每一次完成一個功能，每一次學到新的技術都讓我有很高的成就感，所以我想繼續走這條路，因為我對於這門技術的熱情能讓我長久的走下去。
+                        </p>
+                    </div>
+
+                    <div class="col-10 col-lg-5 text-center">
+                        <img src="images/第一個專案.jpg" alt="">
+                        <p class="photoDescription text-center pt-1">第一個專案</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
 </body>
 

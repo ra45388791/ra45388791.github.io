@@ -1,15 +1,66 @@
+/* ****************************************************************
+                            全部套用
+ **************************************************************** */
+* {
+    /* 字體 */
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+section {
+    padding-top   : 10vw;
+    padding-bottom: 10vw;
+
+    background         : url(../images/下三角.png), url(../images/上三角.png);
+    background-position: top center, bottom center;
+    background-size    : 100%, 100%;
+    background-repeat  : no-repeat, no-repeat;
+}
+
+section h2 {
+    box-shadow: 0px 8px 5px -5px #d3d3d3;
+}
+
+/* ****************************************************************
+                                內容開始
+ **************************************************************** */
+
+
 nav {
     box-shadow: inset 0px -7px 0px 0px rgb(255, 196, 0);
     font-size : 1.1em
 }
 
-.lgNavbarNav {
+nav img {
+    height: 42px;
+}
+
+nav li {
+    position  : relative;
+    
+}
+
+nav li:not(:first-child)::before {
+    content : ",";
+    position: absolute;
+    left    : -0.8em;
+    bottom  : 10px;
+}
+
+.NavbarNav {
     width: 100%;
 }
 
+
+/* ****************************************************************
+                                頂部
+ **************************************************************** */
+
+
 header {
     position           : relative;
-    background         : url(../images/第一段.png), url(../images/hader.jpg);
+    background         : url(../images/上三角.png), url(../images/header.png);
     background-position: bottom center, top center;
     background-repeat  : no-repeat, no-repeat;
     background-size    : 100%, cover;
@@ -61,36 +112,32 @@ header .downArrow {
     box-shadow: 0px 5px 0px 0px rgb(255, 255, 255)
 }
 
-section {
-    padding-top   : 20vw;
-    padding-bottom: 10vw;
+/* ****************************************************************
+                        #technology 技術
+ **************************************************************** */
 
-    background         : url(../images/第二段三角形.png);
-    background-position: top center;
-    background-size    : 100%;
-    background-repeat  : no-repeat;
 
+#technology .card {
+    min-height: 376px;
 }
 
-section .card {
-    min-height: 352px;
-}
-
-section .imgBox {
-
-
+#technology .imgBox {
     width : 100%;
     height: 150px;
 }
 
-section img {
-    
-
-    /* width : auto; */
+#technology img {
     height: 100%;
 
     max-width: 286px;
+}
 
+#technology .card-body {
+    display        : flex;
+    justify-content: start;
+    flex-direction : column;
+
+    min-height: 160px;
 
 }
 
@@ -104,6 +151,33 @@ section img {
     }
 
 }
+
+/* ****************************************************************
+                            自傳
+ **************************************************************** */
+#autobiography {}
+
+#autobiography .textBox {
+    min-height: 494px;
+}
+
+#autobiography h3 {
+    box-shadow: inset 0px -8px 0px 0px rgb(211, 211, 211)
+}
+
+#autobiography .autobiographicalText {
+    text-indent: 2em;
+    text-align : justify;
+
+}
+
+#autobiography img {
+    /* width: 300px; */
+    width : 100%;
+    height: auto;
+}
+
+#autobiography .photoDescription {}
 
 
 @media (min-width: 768px) {
@@ -136,6 +210,8 @@ section img {
         text-align: start;
         font-size : 2.5rem;
     }
+
+
 }
 
 @media (min-width: 1440px) {
