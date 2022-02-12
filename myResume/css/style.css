@@ -7,6 +7,10 @@
     font-family: "Noto Sans TC", sans-serif;
 }
 
+body {
+    padding-top: 61px;
+}
+
 
 section {
     padding-top   : 10vw;
@@ -29,8 +33,17 @@ section h2 {
 
 nav {
     /* box-shadow: inset 0px -7px 0px 0px rgb(255, 196, 0); */
+    position: fixed !important;
+
+    top : 0px;
+    left: 0px;
+
+    width: 100%;
+
     box-shadow: inset 0px -7px 0px 0px rgb(26, 199, 147);
     font-size : 1em;
+
+    z-index: 999;
 }
 
 nav img {
@@ -66,8 +79,11 @@ header {
     background-position: bottom center, top center;
     background-repeat  : no-repeat, no-repeat;
     background-size    : 100%, cover;
-    width              : 100vw;
-    height             : calc(100vh - 56px);
+
+
+
+    width : 100vw;
+    height: calc(100vh - 56px);
 }
 
 header>div {
@@ -87,7 +103,7 @@ header>div>div h1 {
 header>div>div h1 samp {
     color     : rgb(0, 255, 149);
     box-shadow: inset 0px -2px 0px 0px rgb(255, 255, 255);
-    z-index   : 2;
+
 }
 
 header>div>div h2 {
@@ -95,22 +111,21 @@ header>div>div h2 {
     text-align: center;
     font-size : 1.5rem;
     min-width : 11em;
-    z-index   : 2;
 }
 
 header .avatar {
     max-width: 40vh;
 }
 
-header .bannerMark {
-    position: fixed;
+/* header .bannerMark {
+    position: absolute;
     width   : 100vw;
     height  : 100vh;
 
     background: #000;
-    
+    z-index   : ;
 
-}
+} */
 
 
 
