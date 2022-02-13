@@ -100,262 +100,42 @@
 
                 </div>
                 <h3 class="pb-3 display-5 fw-bold text-dark">前端</h3>
-                <div v-for="" class="row pb-4 justify-content-around">
-
-
-
-                    <technology-card bs-style="" img-path="images/HTML.png" img-width="" card-bs-style=""
-                        h5-title="Html5" card-content="熟悉大部分DOM的使用方式、Form表單、簡易的SEO等。" card-samp="test"
-                        samp-style="color:red;">
-
-                    </technology-card>
-
-                    <!-- <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/HTML.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Html5</h5>
-                                <p class="card-text">熟悉大部分DOM的使用方式、Form表單、簡易的SEO等。</p>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/css.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">CSS</h5>
-                                <p class="card-text">能將網頁以指定的方式切版。</br>熟悉Flex排版、元素定位、簡易Animation、選擇器使用方式</p>
-                            </div>
-                        </div>
+                <!-- 組件 -->
+                <div class="row pb-4 justify-content-around">
+                    <div v-for="frontEndCardItem in frontEndCardItems" class=" col-12 col-md-6 col-lg-4">
+                        <technology-card :bs-style="frontEndCardItem.bsStyle" :img-path="frontEndCardItem.imagePath"
+                            :img-width="frontEndCardItem.mgWidth" :card-bs-style="frontEndCardItem.cardBsStyle"
+                            :h5-title="frontEndCardItem.h5Title" :card-content="frontEndCardItem.cardContent"
+                            :card-samp="frontEndCardItem.cardSamp" :samp-style="frontEndCardItem.sampStyle">
+                        </technology-card>
                     </div>
+                </div>
 
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/javascript.png" class="" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">JavaScript</h5>
-                                <p class="card-text">能使用原生javascript對頁面元素直接操作，處理由html表單提交的資料等。重視程式的易讀性。</p>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="display-5 fw-bold text-dark">後端</h3>
+                <!-- 組件 -->
+                <div class="row pb-4 justify-content-around">
 
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/bootsrtape.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">BootStrap</h5>
-                                <!-- !color:#7511F6 -->
-                                <p class="card-text">針對不同元件客製化修改成適合該網頁的內容。<span
-                                        style="color:#7511F6"></br>本網頁使用BootStrap製作。</span> </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/vue.svg" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Vue.js</h5>
-                                <!-- !color:#41B883 -->
-                                <p class="card-text">目前正在學習中，知道基本使用方法，組件使用方式，能夠製作小型專案。<span
-                                        style="color:#41B883"></br>本網頁使用Vue製作</span> </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/RWD.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">RWD設計</h5>
-                                <p class="card-text">使用css對不同裝置的尺寸進行動態修改，達成符合不同裝置都能使用的效果。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/rest_api.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">RESTful / Api</h5>
-                                <p class="card-text">使用GET、POST、PUT、DELETE等方法對API接口發送請求。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <!-- !這裡有特別設置寬度 -->
-                                <img src="images/AJAX.png" class="" style="width: 250px;" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">AJAX</h5>
-                                <p class="card-text">使用RESTful對API接口取得想要的資料後單獨渲染該資料，而不對整個網頁進行重整。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/git.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">git</h5>
-                                <p class="card-text">目前會基本操作init、add、commit、push等。</p>
-                            </div>
-                        </div>
+                    <div v-for="backEndCardItem in backEndCardItems" class=" col-12 col-md-6 col-lg-4">
+                        <technology-card :bs-style="backEndCardItem.bsStyle" :img-path="backEndCardItem.imagePath"
+                            :img-width="backEndCardItem.mgWidth" :card-bs-style="backEndCardItem.cardBsStyle"
+                            :h5-title="backEndCardItem.h5Title" :card-content="backEndCardItem.cardContent"
+                            :card-samp="backEndCardItem.cardSamp" :samp-style="backEndCardItem.sampStyle">
+                        </technology-card>
                     </div>
 
                 </div>
-
-                <!-- ****************************** 後端 ****************************** -->
-
+                <h3 class="display-5 fw-bold text-dark">其他</h3>
+                <!-- 組件 -->
                 <div class="row pb-4 justify-content-around">
-                    <h3 class="display-5 fw-bold text-dark">後端</h3>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/nodejs.webp" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">Node.js</h5>
-                                <p class="card-text">可以製作簡單的接口與前端溝通。</p>
-                            </div>
-                        </div>
+                    <div v-for="otherCardItem in otherCardItems" class=" col-12 col-md-6 col-lg-4">
+                        <technology-card :bs-style="otherCardItem.bsStyle" :img-path="otherCardItem.imagePath"
+                            :img-width="otherCardItem.mgWidth" :h5-title="otherCardItem.h5Title"
+                            :card-content="otherCardItem.cardContent" :card-samp="otherCardItem.cardSamp"
+                            :samp-style="otherCardItem.sampStyle">
+                            <!-- 子組件的子組件 -->
+                            <technology-card-ol :ol-items="otherCardItem.olItemArray"></technology-card-ol>
+                        </technology-card>
                     </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <!-- ! p-2 -->
-                            <div class="imgBox p-2 d-flex justify-content-center">
-                                <img src="images/MySQL.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">MySQL</h5>
-                                <p class="card-text">知道基本語法、如何搜尋、條件搜尋、插入資料等</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox d-flex justify-content-center">
-                                <img src="images/heroku.jpg" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">heroku</h5>
-                                <p class="card-text">用來運算的雲端平台，建置將前兩項Node.js與MySQL的平台。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <!--! p-4 -->
-                            <div class="imgBox p-4 d-flex justify-content-center">
-                                <img src="images/npm.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">npm</h5>
-                                <p class="card-text">用來建置node.js第三方api的工具。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- ****************************** 其他 ****************************** -->
-                <div class="row pb-4 justify-content-around">
-                    <h3 class="display-5 fw-bold text-dark">其他</h3>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox  d-flex justify-content-center">
-                                <img src="images/office365.png" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">微軟 office365</h5>
-                                <ol class="card-text">
-                                    <li>Word</li>
-                                    <li>PowerPoint</li>
-                                    <li>Excel</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox  d-flex justify-content-center">
-                                <img src="images/adobe.jpg" class="" alt="...">
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">adobe</h5>
-                                <ol class="card-text">
-                                    <li>Photoshop</li>
-                                    <li>Dreamweaver</li>
-
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" col-12 col-md-6 col-lg-4">
-                        <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
-                            <div class="imgBox  d-flex justify-content-center">
-                                <img src="images/computer.gif" class="" alt="...">
-                            </div>
-                            <!-- ! pt-0 pb-0 -->
-                            <div class="card-body pt-0 pb-0">
-                                <h5 class="card-title">其他</h5>
-                                <ol class="card-text">
-                                    <li>虛擬機:VirtualBox</li>
-                                    <li>遊戲引擎:Unity</li>
-                                    <li>3D建模:blender</li>
-                                    <li>繪圖:Krita</li>
-                                    <li>SVG:inkscape</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
                 </div>
             </div>
         </div>

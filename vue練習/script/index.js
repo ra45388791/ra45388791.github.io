@@ -349,7 +349,8 @@ let app = new Vue({
                 });
         },
         getSqlData: function (e) {
-            /*  //sql資料
+            let vm = this;
+            //sql資料
             let url1;
             if (location.href === 'http://localhost:5500/') {
                 url1 = `http://localhost:5000/?pagenumber=4`;
@@ -365,11 +366,18 @@ let app = new Vue({
             })
                 .then(function (response) {
                     console.log(response);
-                    console.log(`資料類型:${typeof response}`);
-                }).catch(function (error) {
-
+                    // console.log(`資料類型:${typeof response}`);
+                    return response.data[0];
+                }).then(function (response) {
+                    console.log(response);
+                    let id = response.data_id;
+                    let name = response.data_name;
+                    vm.sqldata = `<div>員工id: ${id} </br> 員工姓名: ${name}</div>`
                 })
-            */
+                .catch(function (error) {
+                    console.log(error);
+                })
+
 
         },
         vueEmitTest: function (count) {

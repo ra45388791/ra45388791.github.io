@@ -134,7 +134,7 @@ header .avatar {
 
 
 #technology .card {
-    min-height: 376px;
+    min-height: 400px;
 }
 
 #technology .imgBox {
@@ -224,8 +224,6 @@ header .avatar {
         bottom: -80px;
     }
 
-
-
     100% {
         bottom: 45px;
     }
@@ -235,8 +233,6 @@ header .avatar {
     0% {
         bottom: 45px;
     }
-
-
 
     100% {
         bottom: -80px;
@@ -319,3 +315,4 @@ header .avatar {
         font-size : 4rem;
     }
 }
+
