@@ -1,14 +1,10 @@
 // ****************************************************************
 //                             組件
 // ****************************************************************
-Vue.component('technology-card', {
-    data: function () {
-        return {
-            cardSampData: ''
-        }
-    },
-    template: `
 
+//*技術卡片區*
+Vue.component('technology-card', {
+    template: `
             <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
 
                 <div :class="bsStyle" class="imgBox d-flex justify-content-center">
@@ -17,18 +13,19 @@ Vue.component('technology-card', {
 
                 <div class="card-body">
                     <h5 class="card-title">{{h5Title}}</h5>
+
                     <slot>
                         <p  class="card-text">{{cardContent}}
                             <samp :style="sampStyle"></br>{{cardSamp}}</samp>
                         </p>
                     </slot>
+
                 </div>
             </div>
 
     `,
     props: {
         bsStyle: String,    //bootstrap 樣式
-
         imgPath: {          //圖片路徑
             type: String,
             required: true
@@ -50,7 +47,7 @@ Vue.component('technology-card', {
 
 })
 
-//卡片內容清單樣式
+//卡片內容列表樣式
 Vue.component('technology-card-ol', {
     data: function () {
         return {
@@ -71,16 +68,100 @@ Vue.component('technology-card-ol', {
     }
 })
 
+//*自傳區*
+Vue.component('autobiography-template', {
+    data: function () {
+        return {
+            domId: this.domIdNumber,
+            forward: "justify-content-center",
+            reverse: "flex-column-reverse flex-lg-row justify-content-lg-center"
+        }
+    },
+    template: `
+        <div :class="div1Style" class=" textBox row mb-5 align-items-center">
+            <slot name="slota"></slot>
+            <slot name="slotb"></slot>
+        </div>
+    `,
+    props: {
+        domIdNumber: {
+            type: Number,
+            required: true
+        }
+    },
+    computed: {
+        div1Style: function () {
+            if (this.domId === 1 || this.domId % 3 === 0) {
+                return this.forward;
+            } else {
+                return this.reverse;
+            }
+        }
+    }
+})
+
+Vue.component('autobiography-template-a', {
+    template: `
+        <div class="d-flex flex-column justify-content-around col-10 col-lg-6 col-xl-5 mb-3 text-center text-lg-start">
+            <h3 class="mb-4 display-6 fw-bold">{{smallTitle}}</h3>
+            <p class="autobiographicalText fs-4 px-3 ps-lg-0 pe-lg-5">
+                {{content}}
+            </p>
+        </div>
+    `,
+    props: {
+        smallTitle: {
+            type: String,
+            required: true,
+            default: '請輸入標題'
+        },
+        content: {
+            type: String,
+            required: true,
+            default: '請輸入內容'
+        }
+
+    }
+})
+
+Vue.component('autobiography-template-b', {
+    template: `
+        <div class="col-10 col-lg-5 text-center">
+            <img :src="imagePath" :style="imageStyle" alt="">
+            <p class="photoDescription text-center pt-1">{{imageText}}</p>
+        </div>
+    `,
+    props: {
+        imagePath: {
+            type: String,
+            required: true,
+            default: '請輸入標題'
+        },
+        imageStyle: {
+            type: String,
+            required: true,
+            default: '請輸入內容'
+        },
+        imageText: {
+            type: String,
+            required: true,
+            default: '請輸入內容'
+        }
+
+    }
+})
+
+
 // ****************************************************************
 //                             資料
 // ****************************************************************
-let headerVueData = {
+const headerVueData = {
     h1text: 'width:0%;',
     h2text1: 'width:0%;',
     h2text2: 'width:0%;',
 }
 
-let technologyData = {
+const technologyData = {
     frontEndCardItems: [
         {
             bsStyle: '',
@@ -200,7 +281,7 @@ let technologyData = {
             h5Title: 'npm',
             cardContent: '用來建置node.js第三方api的工具。',
             cardSamp: '',
-            sampStyle: ''
+            sampStyle: '',
         },
 
     ],
@@ -235,18 +316,60 @@ let technologyData = {
             sampStyle: '',
             olItemArray: ['虛擬機:VirtualBox', '遊戲引擎:Unity', '3D建模:blender', '繪圖:Krita', 'SVG:inkscape']
         }
-    ],
-
-
-
+    ]
 }
 
-
+const autobiographyData = {
+    data: [
+        {
+            id: 1,
+            title: '關於我',
+            content: '我來自一個平凡家庭，但我有不平凡的成長經歷，我畢業於台北城市科技大學，我是一名樂觀上進有耐心的人，對於任何事情總是保持著認真的態度面對。',
+            image: '/images/全身照.jpg',
+            imageStyle: 'width: 300px;',
+            imageText: '畢業全身照'
+        },
+        {
+            id: 2,
+            title: '成長經歷',
+            content: '在成長的過程中我父親常帶我出門和他工作，而因為這份工作的性質特殊能讓我在求學階段就見識到這個世界的不同樣貌，我印象最深的是我曾看過一間公司的座右銘『今天的小錯，是明天的災難⠀』。我認為這句話十分受用，也讓我在之後不管生活還是工作上都時常保持著注意細節。',
+            image: 'images/憲兵指揮部.jpg',
+            imageStyle: '',
+            imageText: '憲兵指揮部89周年慶'
+        },
+        {
+            id: 3,
+            title: '大學時期',
+            content: '在大學四年的日子裡我過得相當充實且快樂，也認識了幾位知心好友，影響我最深的是畢業專題製作的那段日子，我分配到的工作是負責撰寫程式，可以說是整個小組專題的核心所在，所以我當時不分日夜的撰寫程式，最終成功拿到這門學分，也因此打下了我的程式基礎。',
+            image: 'images/畢業專題.jpg',
+            imageStyle: '',
+            imageText: '畢業專題截圖'
+        },
+        {
+            id: 4,
+            title: '高中時期',
+            content: '高中時曾代表校隊參加全國電子競技比賽，可惜雖然我們從入圍賽打入BO5階段時就敗下陣來，但這段時間讓我學到很多東西，像是如何在高壓環境下執行團隊戰術，以及如何與隊友配合達成目標。',
+            image: 'images/熊武士.png',
+            imageStyle: 'width: 300px;',
+            imageText: '熊武士Logo'
+        },
+        {
+            id: 5,
+            title: '未來展望',
+            content: '從大學畢業後我因為家業需求而開始接觸前端技術，在學習的過程我發現我對於這門技術的熱情高得超乎我的想像，每一次完成一個功能，每一次學到新的技術都讓我有很高的成就感，所以我想繼續走這條路，因為我對於這門技術的熱情能讓我長久的走下去。',
+            image: 'images/第一個專案.jpg',
+            imageStyle: '',
+            imageText: '第一個專案'
+        },
+    ]
+}
 
 
 // ****************************************************************
 //                             程式
 // ****************************************************************
+
+//*頂部區*
 let headerVue = new Vue({
     el: '#headerVue',
     data: headerVueData,
@@ -271,14 +394,22 @@ let headerVue = new Vue({
     }
 })
 
+//*技術卡片區*
 let technology = new Vue({
     el: '#technology',
     data: technologyData,
     methods: {}
 })
 
+let autobiography = new Vue({
+    el: '#autobiography',
+    data: autobiographyData,
+
+})
 
 
+
+//*小元件區*
 let widgetVue = new Vue({
     el: '#widgetVue',
     data: {
