@@ -1,16 +1,89 @@
-data1 = {
+// ****************************************************************
+//                             組件
+// ****************************************************************
+Vue.component('technology-card', {
+    data: function () {
+        return {
+            cardSampData: ''
+        }
+    },
+    template: `
+        <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card mx-auto my-3 pt-5 pb-3 shadow" style="width: 18rem;">
+
+                <div :class="bsStyle" class="imgBox d-flex justify-content-center">
+                    <img :src="imgPath" :style="imgWidth">
+                </div>
+
+                <div class="card-body" :class="cardBsStyle">
+                    <h5 class="card-title">{{h5Title}}</h5>
+                    <p  class="card-text">{{cardContent}}
+                        <samp :style="sampStyle"></br>{{cardSamp}}</samp>
+                    </p>
+                </div>
+            </div>
+        </div>
+    `,
+    props: {
+        bsStyle: String,    //bootstrap 樣式
+
+        imgPath: {          //圖片路徑
+            type: String,
+            required: true
+        },
+        imgWidth: String,   //圖片寬度
+
+        cardBsStyle: String,//卡片bs樣式
+        h5Title: {          //小標題
+            type: String,
+            required: true,
+            default: '請輸入標題'
+        },
+        cardContent: {      //卡片內容
+            type: String,
+            required: true,
+            default: '請輸入內容'
+        },
+        cardSamp: String,   //卡片特殊敘述
+        sampStyle: String   //敘述文字顏色
+    }
+
+})
+
+
+// ****************************************************************
+//                             資料
+// ****************************************************************
+let headerVueData = {
     h1text: 'width:0%;',
     h2text1: 'width:0%;',
     h2text2: 'width:0%;',
+}
 
-    
-
+let technologyData = {
+    cardItem: [
+        {
+            bsStyle: '',
+            imagePath: 'images/HTML.png',
+            imgWidth: '',
+            cardBsStyle: '',
+            h5Title: 'Html5',
+            cardContent: '熟悉大部分DOM的使用方式、Form表單、簡易的SEO等。',
+            cardSamp: 'test',
+            sampStyle:'color:red;'
+        }
+    ]
 }
 
 
+
+
+// ****************************************************************
+//                             程式
+// ****************************************************************
 let headerVue = new Vue({
     el: '#headerVue',
-    data: data1,
+    data: headerVueData,
     mounted: function () {
         window.addEventListener("scroll", this.watchScroll);
         // console.log(this);
@@ -29,11 +102,17 @@ let headerVue = new Vue({
         })
     },
     methods: {
-
     }
-
-
 })
+
+let technology = new Vue({
+    el: '#technology',
+    data: technologyData,
+    methods: {}
+})
+
+
+
 let widgetVue = new Vue({
     el: '#widgetVue',
     data: {
