@@ -76,6 +76,7 @@ let app1 = new Vue({
             }).
                 then((e) => {
                     if (e.request.responseURL !== url) {
+                        //如果回傳網址不等於原本傳出去的網址的話。
                         location.href = e.request.responseURL;
                     } else {
 
