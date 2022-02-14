@@ -191,11 +191,41 @@ header .avatar {
     height: auto;
 }
 
-#autobiography .photoDescription {}
 
 /* ****************************************************************
                             小元件
  **************************************************************** */
+
+/* 讀取 */
+.loading {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+
+    width : 100vw;
+    height: 100vh;
+
+    background: #000;
+    z-index   : 99999;
+
+    opacity: 1;
+
+}
+
+
+@keyframes loadingAni {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* 按鈕 */
 #pushButton {
     position: fixed;
     right   : 30px;
@@ -315,4 +345,3 @@ header .avatar {
         font-size : 4rem;
     }
 }
-

@@ -385,9 +385,9 @@ let headerVue = new Vue({
                     vm.h2text2 = 'animation: titleWidth 2s ease-in-out forwards';
                     setTimeout(function () {
                         vm.h1text = 'animation: titleWidth 2s ease-out forwards';
-                    }, 1300)
-                }, 200);
-            }, 500)
+                    }, 1800)
+                }, 700);
+            }, 1000)
         })
     },
     methods: {
@@ -413,6 +413,10 @@ let autobiography = new Vue({
 let widgetVue = new Vue({
     el: '#widgetVue',
     data: {
+        loading:{
+            deleteLoading: true,
+            animation:''
+        },
         scrollCount: 0,
         buttonAni: {
             buttonState: false,
@@ -424,6 +428,19 @@ let widgetVue = new Vue({
         this.$nextTick(function () {
             //監聽滾動條
             window.addEventListener("scroll", this.watchScroll);
+        })
+    },
+    mounted:function(){
+        this.$nextTick(function () {
+            let vm = this;
+
+            this.loading.animation = 'animation: loadingAni 1s ease-out forwards';
+
+
+            setTimeout(function () {
+
+                vm.loading.deleteLoading= false;
+            },1000);
         })
     },
     methods: {

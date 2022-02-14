@@ -221,13 +221,13 @@
     </section>
 
     <div id="widgetVue">
+        <div class="loading" v-if="loading.deleteLoading" :style="loading.animation">
+
+        </div>
         <div id="pushButton" :style="buttonAni.buttonAnimation">
             <img src="images/top-arrow.png" :style="" alt="">
             <a href="#">
         </div>
-
-
-
     </div>
 </body>
 
