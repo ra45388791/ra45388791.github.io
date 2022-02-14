@@ -91,10 +91,12 @@ Vue.component('autobiography-template', {
     },
     computed: {
         div1Style: function () {
-            if (this.domId === 1 || this.domId % 3 === 0) {
+            if (this.domId === 1) {
                 return this.forward;
-            } else {
+            } else if (this.domId % 2 === 0) {
                 return this.reverse;
+            } else {
+                return this.forward;
             }
         }
     }
@@ -413,9 +415,9 @@ let autobiography = new Vue({
 let widgetVue = new Vue({
     el: '#widgetVue',
     data: {
-        loading:{
+        loading: {
             deleteLoading: true,
-            animation:''
+            animation: ''
         },
         scrollCount: 0,
         buttonAni: {
@@ -430,7 +432,7 @@ let widgetVue = new Vue({
             window.addEventListener("scroll", this.watchScroll);
         })
     },
-    mounted:function(){
+    mounted: function () {
         this.$nextTick(function () {
             let vm = this;
 
@@ -439,8 +441,8 @@ let widgetVue = new Vue({
 
             setTimeout(function () {
 
-                vm.loading.deleteLoading= false;
-            },1000);
+                vm.loading.deleteLoading = false;
+            }, 1000);
         })
     },
     methods: {
