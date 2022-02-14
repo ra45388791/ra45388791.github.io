@@ -6,7 +6,8 @@ data = {
     },
     gitImage: "",
     htmlContentAni: "",
-    axiosResData: ""
+    axiosResData: "",
+    axiosResDataStyle: ""
 
 
 
@@ -59,6 +60,8 @@ let app1 = new Vue({
             const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
             // url = `http://localhost:5000/?gitUser=orange`;
 
+            this.axiosResData = '<div>請稍後...</div>'
+            this.axiosResDataStyle = ''
 
             let formData = new FormData();
             formData.append('username', e.target.username.value);
@@ -75,7 +78,9 @@ let app1 = new Vue({
                     if (e.request.responseURL !== url) {
                         location.href = e.request.responseURL;
                     } else {
+
                         this.axiosResData = e.data;
+                        this.axiosResDataStyle = "color:red"
                     }
                     console.log(e);
                     console.log('回傳網址' + e.request.responseURL);

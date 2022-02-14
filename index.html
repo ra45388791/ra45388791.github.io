@@ -97,7 +97,7 @@
                         <!-- 表單 -->
                         <div class="text-center">
                             <form method="post" action="/" class="row gy-3 flex-wrap" @submit.prevent="submitLogin">
-                                <div v-html="axiosResData" style="color:red"></div>
+                                <div v-html="axiosResData" :style="axiosResDataStyle"></div>
                                 <div class="col-12">
                                     <label for="username" class="col-12 ">帳號</label>
                                     <input type="text" name="username" placeholder="username">
