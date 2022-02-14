@@ -113,8 +113,7 @@ header>div>div h2 {
 }
 
 header .avatar {
-    /* max-width: 40vh; */
-    width: 200px
+    max-width: 40vh;
 }
 
 /* header .bannerMark {
@@ -327,10 +326,7 @@ header .avatar {
         font-size : 2.5rem;
     }
 
-    header .avatar {
-        max-width: 40vh;
 
-    }
 }
 
 @media (min-width: 1440px) {
