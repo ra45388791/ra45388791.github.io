@@ -8,7 +8,7 @@
 }
 
 body {
-    padding-top: 61px;
+    padding-top: 56px;
 }
 
 section {
@@ -113,7 +113,8 @@ header>div>div h2 {
 }
 
 header .avatar {
-    max-width: 40vh;
+    /* max-width: 40vh; */
+    width: 200px
 }
 
 /* header .bannerMark {
@@ -326,7 +327,10 @@ header .avatar {
         font-size : 2.5rem;
     }
 
+    header .avatar {
+        max-width: 40vh;
 
+    }
 }
 
 @media (min-width: 1440px) {
