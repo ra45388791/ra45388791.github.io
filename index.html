@@ -28,9 +28,9 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="script/vue.js"></script>
     <script defer src="script/index.js"></script>
 </head>
@@ -52,9 +52,9 @@
 
             <div class="row  text-center justify-content-around">
                 <button :style="htmlContentAni" @click="changeAbouMyPage"
-                    class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0 " >
+                    class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0 ">
                     <div>
-                        <h2 class="display-4 fw-bold" >我的履歷</h2>
+                        <h2 class="display-4 fw-bold">我的履歷</h2>
                         <h3 class="display-6 fw-bold">(直接進入)</h3>
                     </div>
                 </button>
@@ -70,7 +70,16 @@
 
             </div>
 
+
             <div class="row  text-center justify-content-around">
+
+                <button :style="htmlContentAni" @click="weatherForecast"
+                    class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0 ">
+                    <div>
+                        <h2 class="display-4 fw-bold">36小時內氣象預報</h2>
+                        <!-- <h3 class="display-6 fw-bold">(直接進入)</h3> -->
+                    </div>
+                </button>
 
                 <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 px-0"
@@ -80,9 +89,9 @@
                         <h2 class="d-block display-4 fw-bold">vue練習</h2>
                     </div>
                 </button>
-                <button :style="htmlContentAni" class="buttonBox nullBox col-5 py-3">
-
-                </button>
+                <!-- <button :style="htmlContentAni" class="buttonBox nullBox col-5 py-3">
+                        空佔位格
+                </button> -->
             </div>
         </div>
 

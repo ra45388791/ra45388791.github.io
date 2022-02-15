@@ -233,7 +233,7 @@ const technologyData = {
             imagePath: 'images/AJAX.png',
             imgWidth: 'width: 250px;',
             h5Title: 'AJAX',
-            cardContent: '使用RESTful對API接口取得想要的資料後單獨渲染該資料，而不對整個網頁進行重整。',
+            cardContent: '使用axios對API接口取得想要的資料後單獨渲染該資料，而不對整個網頁進行重整。',
             cardSamp: '',
             sampStyle: ''
         },

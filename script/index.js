@@ -92,6 +92,9 @@ let app1 = new Vue({
 
 
         },
+        weatherForecast: function () {
+            location.href = 'page/台灣天氣地圖/index.html';
+        },
         changeAbouMyPage: function () {
             location.href = 'myResume/index.html';
         },
