@@ -355,6 +355,7 @@ let app = new Vue({
             if (location.href === 'http://localhost:5500/') {
                 url1 = `http://localhost:5000/?pagenumber=4`;
             } else {
+                // url1 = `http://localhost:5000/?pagenumber=4`;
                 url1 = `https://hidden-escarpment-17052.herokuapp.com/?pagenumber=4`;
             }
             this.sqldata = '<div>等待資料回應...</div>';

@@ -59,19 +59,14 @@
                     </div>
                 </button>
 
-                <button :style="htmlContentAni"
+                <!-- <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0" type="button"
                     data-bs-toggle="modal" data-bs-target="#RESTfulButton">
                     <div>
                         <h2 class="display-4 fw-bold">我的履歷</h2>
                         <h3 class="display-6 fw-bold">( RESTful )</h3>
                     </div>
-                </button>
-
-            </div>
-
-
-            <div class="row  text-center justify-content-around">
+                </button> -->
 
                 <button :style="htmlContentAni" @click="weatherForecast"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 py-3 px-0 ">
@@ -81,6 +76,13 @@
                     </div>
                 </button>
 
+            </div>
+
+
+            <div class="row  text-center justify-content-around">
+
+
+
                 <button :style="htmlContentAni"
                     class="buttonBox d-flex justify-content-center align-items-center col-5 px-0"
                     @click="changeVuePage">
@@ -89,9 +91,9 @@
                         <h2 class="d-block display-4 fw-bold">vue練習</h2>
                     </div>
                 </button>
-                <!-- <button :style="htmlContentAni" class="buttonBox nullBox col-5 py-3">
-                        空佔位格
-                </button> -->
+                <button :style="htmlContentAni" class="buttonBox nullBox col-5 py-3">
+                    
+                </button>
             </div>
         </div>
 
