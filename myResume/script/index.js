@@ -206,7 +206,7 @@ const technologyData = {
             imagePath: 'images/vue.svg',
             imgWidth: '',
             h5Title: 'Vue.js',
-            cardContent: '目前正在學習中，知道基本使用方法，組件使用方式，能夠製作小型專案。',
+            cardContent: '熟悉基本使用方法，組件使用方式，能夠獨立製作小型專案。',
             cardSamp: '本網頁使用Vue製作',
             sampStyle: 'color:#41B883;'
         },

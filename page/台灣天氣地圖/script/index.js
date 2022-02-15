@@ -96,7 +96,7 @@ let app = new Vue({
                 enName: "LienchiangCounty"
             }
         ],
-        showState: false,
+        showState: false,   //按下按鈕才秀出資料
         showData: {
             cityName: '',            //城市名稱
             Wx: [
