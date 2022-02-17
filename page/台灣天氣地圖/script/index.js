@@ -1,240 +1,170 @@
 let app = new Vue({
     el: "#app",
     data: {
-        dataDescription: '',
+        area: '--請選擇--',     //選項地區
+        chooseTime: 0,          //選項日期
+        mapState: {
+            zh: '基隆市',
+            en: 'keelungCity'
 
-        meteorologicalData: [
-
-        ],
-        citys: [
-            {
-                zhName: "基隆市",
-                enName: "keelungCity"
-            },
-            {
-                zhName: "臺北市",
-                enName: "TaipeiCity"
-            },
-            {
-                zhName: "新北市",
-                enName: "NewTaipeiCity"
-            },
-            {
-                zhName: "桃園市",
-                enName: "TaoyuanCity"
-            },
-            {
-                zhName: "新竹市",
-                enName: "HsinchuCity"
-            },
-            {
-                zhName: "新竹縣",
-                enName: "HsinchuCounty"
-            },
-            {
-                zhName: "苗栗縣",
-                enName: "MiaoliCounty"
-            },
-            {
-                zhName: "臺中市",
-                enName: "TaichungCity"
-            },
-            {
-                zhName: "彰化縣",
-                enName: "ChanghuaCounty"
-            },
-            {
-                zhName: "南投縣",
-                enName: "NantouCounty"
-            },
-            {
-                zhName: "雲林縣",
-                enName: "YunlinCounty"
-            },
-            {
-                zhName: "嘉義市",
-                enName: "ChiayiCity"
-            },
-            {
-                zhName: "嘉義縣",
-                enName: "ChiayiCounty"
-            },
-            {
-                zhName: "臺南市",
-                enName: "TainanCity"
-            },
-            {
-                zhName: "高雄市",
-                enName: "KaohsiungCity"
-            },
-            {
-                zhName: "屏東縣",
-                enName: "PingtungCounty"
-            },
-            {
-                zhName: "宜蘭縣",
-                enName: "YilanCounty"
-            },
-            {
-                zhName: "花蓮縣",
-                enName: "HualienCounty"
-            },
-            {
-                zhName: "臺東縣",
-                enName: "TaitungCounty"
-            },
-            {
-                zhName: "澎湖縣",
-                enName: "PenghuCounty"
-            },
-            {
-                zhName: "金門縣",
-                enName: "KinmenCounty"
-            },
-            {
-                zhName: "連江縣",
-                enName: "LienchiangCounty"
-            }
-        ],
-        showState: false,   //按下按鈕才秀出資料
-        showData: {
-            cityName: '',            //城市名稱
-            Wx: [
+        },
+        citys: {                    //城市名
+            northerns: [
                 {
-                    startTime: '',          //開始時間
-                    endTime: '',            //結束時間
-                    parameter: {
-                        parameterName: '',  //氣候
-                        parameterValue: ''  //代號
-                    }
+                    id: 1,
+                    zhName: "基隆市",
+                    enName: "keelungCity"
                 },
                 {
-                    startTime: '',          //開始時間
-                    endTime: '',            //結束時間
-                    parameter: {
-                        parameterName: '',  //氣候
-                        parameterValue: ''  //代號
-                    }
+                    id: 2,
+                    zhName: "臺北市",
+                    enName: "TaipeiCity"
                 },
                 {
-                    startTime: '',          //開始時間
-                    endTime: '',            //結束時間
-                    parameter: {
-                        parameterName: '',  //氣候
-                        parameterValue: ''  //代號
-                    }
-                }
+                    id: 3,
+                    zhName: "新北市",
+                    enName: "NewTaipeiCity"
+                },
+                {
+                    id: 4,
+                    zhName: "桃園市",
+                    enName: "TaoyuanCity"
+                },
+                {
+                    id: 5,
+                    zhName: "新竹市",
+                    enName: "HsinchuCity"
+                },
+                {
+                    id: 6,
+                    zhName: "新竹縣",
+                    enName: "HsinchuCounty"
+                },
+                {
+                    id: 7,
+                    zhName: "宜蘭縣",
+                    enName: "YilanCounty"
+                },
             ],
-            PoP: [
+            centrals: [
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
+                    id: 8,
+                    zhName: "苗栗縣",
+                    enName: "MiaoliCounty"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
+                    id: 9,
+                    zhName: "臺中市",
+                    enName: "TaichungCity"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
-                }
+                    id: 10,
+                    zhName: "彰化縣",
+                    enName: "ChanghuaCounty"
+                },
+                {
+                    id: 11,
+                    zhName: "南投縣",
+                    enName: "NantouCounty"
+                },
+                {
+                    id: 12,
+                    zhName: "雲林縣",
+                    enName: "YunlinCounty"
+                },
             ],
-            MinT: [
+            souths: [
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
+                    id: 13,
+                    zhName: "嘉義市",
+                    enName: "ChiayiCity"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
+                    id: 14,
+                    zhName: "嘉義縣",
+                    enName: "ChiayiCounty"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
-                }
+                    id: 15,
+                    zhName: "臺南市",
+                    enName: "TainanCity"
+                },
+                {
+                    id: 16,
+                    zhName: "高雄市",
+                    enName: "KaohsiungCity"
+                },
+                {
+                    id: 17,
+                    zhName: "屏東縣",
+                    enName: "PingtungCounty"
+                },
+                {
+                    id: 18,
+                    zhName: "澎湖縣",
+                    enName: "PenghuCounty"
+                },
             ],
-            CI: [
+            easts: [
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
+                    id: 19,
+                    zhName: "花蓮縣",
+                    enName: "HualienCounty"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
+                    id: 20,
+                    zhName: "臺東縣",
+                    enName: "TaitungCounty"
                 },
-                {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterValue: ''
-                    }
-                }
             ],
-            MaxT: [
+            islands: [
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
+                    id: 21,
+                    zhName: "金門縣",
+                    enName: "KinmenCounty"
                 },
                 {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
-                },
-                {
-                    startTime: '',
-                    endTime: '',
-                    parameter: {
-                        parameterName: '',
-                        parameterUnit: ''
-                    }
+                    id: 22,
+                    zhName: "連江縣",
+                    enName: "LienchiangCounty"
                 }
             ]
+        },
+        dataDescription: {
+            title: '',              //標題 36小時內天氣預報
+            times: [                //三段時間
+                {
+                    startTime: '',
+                    endTime: ''
+                },
+                {
+                    startTime: '',
+                    endTime: ''
+                },
+                {
+                    startTime: '',
+                    endTime: ''
+                },
+            ],
+            location: [             //各個城市的資料
+            ]
+        },
+        hostData: {                 //目前使用的資料
+            city: '',
+            Wx: '',
+            PoP: '',
+            CI: '',
+            MinT: '',
+            MaxT: '',
+            parameterValue: 0       //天氣代號
 
-        }
+        },
+        hostimg: '',
+        showState: false,       //按下按鈕才秀出資料
 
 
     },
-    mounted: function () {
+    beforeCreate: function () {
         this.$nextTick(function () {
             let vm = this;
             axios({
@@ -243,101 +173,115 @@ let app = new Vue({
             })
                 .then(function (response) {
                     // console.log(response);
-                    //提取資料
+                    //原資料
                     const datas = response.data.records
-                    vm.dataDescription = datas.datasetDescription;
-                    console.log(datas);
-
-                    //對每個縣市做迴圈處理
-                    datas.location.forEach(event => {
-                        {
-                            let box = {
-                                locationName: event.locationName,       //地點名
-                                weatherElement: event.weatherElement    //天氣因素數據
-                            }
-                            vm.meteorologicalData.push(box);
-                        }
-                    });
+                    //地點
+                    const location = datas.location;
+                    //標題
+                    vm.dataDescription.title = datas.datasetDescription;
+                    //把所有縣市推入陣列
+                    location.forEach(function (event, index) {
+                        vm.dataDescription.location.push(event);
+                    })
+                    return location;
                 })
+                .then(function (event) {
+                    //設定三個時間段
+                    event[0].weatherElement[0].time.forEach(function (e, index) {
+
+                        vm.dataDescription.times[index].startTime = e.startTime;
+                        vm.dataDescription.times[index].endTime = e.endTime;
+                    })
+                    // console.log(vm.dataDescription.location);
+                    // console.log(vm.dataDescription.times);
+                });
+
         })
+
 
     },
     methods: {
+        setMap: function (e) {
+            //選單更新時使用目前縣市的中英文名子更新資料
+
+
+
+            this.hostMap(this.mapState.zh, this.mapState.en)
+
+        },
         hostMap: function (zh, en) {
+            // console.log($event);
+            //設定中英文名狀態幫助時間選單更新資料
+            this.mapState.zh = zh;
+            this.mapState.en = en
+
             //用於解析用戶點選的縣市的資料，然後將其實現在畫面上。
             let vm = this;
-            // console.log(zh);
+            let host = this.hostData;
 
-            this.meteorologicalData.forEach(function (event) {
-                if (event.locationName === zh) {
-                    // console.log(event);
-                    vm.showData.cityName = event.locationName;    //城市
-                    // console.log(event.weatherElement);
-                    event.weatherElement.forEach(function (event) {
-                        //解析資料
-                        switch (event.elementName) {
+            //城市標題
+            host.city = zh;
+
+            // console.log(this.dataDescription.location);
+
+            this.dataDescription.location.forEach(function (e) {
+                if (e.locationName === zh) {
+                    // console.log(e);
+                    e.weatherElement.forEach(function (e) {
+                        switch (e.elementName) {
                             case 'Wx':
-                                event.time.forEach(function (event, index) {
-                                    //開始時間
-                                    vm.showData.Wx[index].startTime = event.startTime;
-                                    //結束時間
-                                    vm.showData.Wx[index].endTime = event.endTime;
-                                    //天氣狀況
-                                    vm.showData.Wx[index].parameter.parameterName = event.parameter.parameterName;
-                                    //天氣參數
-                                    vm.showData.Wx[index].parameter.parameterValue = event.parameter.parameterValue;
-
-                                })
+                                console.log(e.time[vm.chooseTime]);
+                                vm.hostData.Wx = e.time[vm.chooseTime].parameter.parameterName;
+                                vm.hostData.parameterValue = parseInt(e.time[vm.chooseTime].parameter.parameterValue, 10);    //氣候代號
                                 break;
                             case 'PoP':
-                                event.time.forEach(function (event, index) {
-                                    vm.showData.PoP[index].startTime = event.startTime;
-                                    vm.showData.PoP[index].endTime = event.endTime;
-                                    vm.showData.PoP[index].parameter.parameterName = event.parameter.parameterName;
-                                    vm.showData.PoP[index].parameter.parameterValue = event.parameter.parameterValue;
-                                })
-                                break;
-                            case 'MinT':
-                                event.time.forEach(function (event, index) {
-                                    vm.showData.MinT[index].startTime = event.startTime;
-                                    vm.showData.MinT[index].endTime = event.endTime;
-                                    vm.showData.MinT[index].parameter.parameterName = event.parameter.parameterName;
-                                    vm.showData.MinT[index].parameter.parameterUnit = `°${event.parameter.parameterUnit}`;
-                                })
+                                vm.hostData.PoP = `${e.time[vm.chooseTime].parameter.parameterName}%`;
                                 break;
                             case 'CI':
-                                event.time.forEach(function (event, index) {
-                                    vm.showData.CI[index].startTime = event.startTime;
-                                    vm.showData.CI[index].endTime = event.endTime;
-                                    vm.showData.CI[index].parameter.parameterName = event.parameter.parameterName;
-                                    vm.showData.CI[index].parameter.parameterValue = event.parameter.parameterValue;
-                                })
+                                vm.hostData.CI = e.time[vm.chooseTime].parameter.parameterName;
+                                break;
+                            case 'MinT':
+                                vm.hostData.MinT = `${e.time[vm.chooseTime].parameter.parameterName}°C`;
                                 break;
                             case 'MaxT':
-                                event.time.forEach(function (event, index) {
-                                    vm.showData.MaxT[index].startTime = event.startTime;
-                                    vm.showData.MaxT[index].endTime = event.endTime;
-                                    vm.showData.MaxT[index].parameter.parameterName = event.parameter.parameterName;
-                                    vm.showData.MaxT[index].parameter.parameterUnit = `°${event.parameter.parameterUnit}`;
-                                })
+                                vm.hostData.MaxT = `${e.time[vm.chooseTime].parameter.parameterName}°C`;
                                 break;
                         }
-
                     })
-
                 }
             })
 
-            // console.log(this.showData.MinT);
+
+            // console.log(vm.hostData);
+            this.showMap(en);
+        },
+        showMap: function (en) {
+            //渲染地圖
+            //秀出資訊區
+
+            //取的天氣代號
+            const int = this.hostData.parameterValue;
+
             document.querySelectorAll('path').forEach(event => {
                 event.style = '';
             });
             document.querySelector(`#${en}`).style = 'fill : var(--color-gold); transform: translate(-5px, -5px);';
 
-            //秀出資訊區
+            if (int === 1) {
+                this.hostimg = 'images/smallimg/sun.png'
+            } else if (int > 1 && int <= 7) {
+                this.hostimg = 'images/smallimg/cloudy.png'
+            } else if (int > 7 && int <= 14) {
+                this.hostimg = 'images/smallimg/rain.png'
+            } else {
+                this.hostimg = 'images/smallimg/storm.png'
+            }
+            console.log(int);
+
             this.showState = true;
-
         }
-    }
+    },
+    computed: {
 
+    }
 });

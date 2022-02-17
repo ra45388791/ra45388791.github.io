@@ -23,72 +23,117 @@
 </head>
 
 <body>
+    <header class="d-flex justify-content-center align-items-center mb-2">
+        <h1 class="text-light text-center">36小時內天氣預報</h1>
+    </header>
 
     <section id="app">
-        <h1 class="text-light text-center my-5">36小時內天氣預報</h1>
-        <div class="container-fluid d-flex justify-content-around text-light">
+        <div class="container-fluid d-flex flex-wrap justify-content-around ">
 
-            <div class="row flex-row col-8">
+            <div class="row flex-row col-12 col-md-8">
                 <div>
-                    <div class="col-12">
-                        <button v-for="city in citys" @click="hostMap(city.zhName,city.enName)"
-                            class="col-1">{{city.zhName}}</button>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center  col-12">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center mx-2">
+                            <h4 class="my-0 me-2">選擇地區 :</h4>
+                            <select v-model="area" @input="setMap" class="col-12 col-md my-2 text-center">
+                                <option value="--請選擇--" selected>--請選擇--</option>
+                                <option value="1">北部</option>
+                                <option value="2">中部</option>
+                                <option value="3">南部</option>
+                                <option value="4">東部</option>
+                                <option value="5">離島</option>
+                            </select>
+
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center mx-2">
+                            <h4 class="my-0 me-2">選擇時段 :</h4>
+                            <select v-model="chooseTime" @input="setMap" class="col-12 col-md  my-2 text-center">
+                                <option value="0" selected>{{dataDescription.times[0].startTime}} ~
+                                    {{dataDescription.times[0].endTime}}</option>
+                                <option value="1">{{dataDescription.times[1].startTime}} ~
+                                    {{dataDescription.times[1].endTime}}</option>
+                                <option value="2">{{dataDescription.times[2].startTime}} ~
+                                    {{dataDescription.times[2].endTime}}</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <div v-if="area === '1'" class="d-flex flex-wrap justify-content-center">
+                                <button v-for="northern in citys.northerns"
+                                    @click="hostMap(northern.zhName, northern.enName)"
+                                    class="col-4 col-md-3 col-lg-2 col-xl-1">{{northern.zhName}}</button>
+                            </div>
+                            <div v-else-if="area === '2'" class="d-flex flex-wrap justify-content-center">
+                                <button v-for="central in citys.centrals"
+                                    @click="hostMap(central.zhName, central.enName)"
+                                    class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{central.zhName}}</button>
+                            </div>
+                            <div v-else-if="area === '3'" class="d-flex flex-wrap justify-content-center">
+                                <button v-for="south in citys.souths" @click="hostMap(south.zhName, south.enName)"
+                                    class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{south.zhName}}</button>
+                            </div>
+                            <div v-else-if="area === '4'" class="d-flex flex-wrap justify-content-center">
+                                <button v-for="east in citys.easts" @click="hostMap(east.zhName, east.enName)"
+                                    class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{east.zhName}}</button>
+                            </div>
+                            <div v-else-if="area === '5'" class="d-flex flex-wrap justify-content-center">
+                                <button v-for="island in citys.islands" @click="hostMap(island.zhName, island.enName)"
+                                    class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{island.zhName}}</button>
+                            </div>
+                            <!-- <div>
+                                <button v-for="city in citys" @click="hostMap(city.zhName,city.enName)"
+                                    class="col-1">{{city.zhName}}</button>
+                            </div> -->
+                        </div>
                     </div>
-                    <div v-show="showState" class="row flex-wrap justify-content-around text-center">
 
-                        <h2 class="col-12 my-4">{{showData.cityName}}</h2>
+                    <div id="content" v-show="showState"
+                        class="row col-12 flex-wrap justify-content-around text-center text-black">
 
-                        <div class="col-2">
+                        <h2 class="col-12 my-4 fw-bold">{{hostData.city}}</h2>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
                             <h3>天氣現象</h3>
-                            <div v-for="Wx in showData.Wx" class="my-5">
-                                <p>{{Wx.startTime}}</p>
-                                <p>{{Wx.endTime}}</p>
-                                <h4>{{Wx.parameter.parameterName}}</h4>
+                            <div class="my-5">
+                                <h4>{{hostData.Wx}}</h4>
                             </div>
                         </div>
 
-                        <div class="col-2">
-                            <h3>降雨機率</h3>
-                            <div v-for="PoP in showData.PoP" class="my-5">
-                                <p>{{PoP.startTime}}</p>
-                                <p>{{PoP.endTime}}</p>
-                                <h4>{{PoP.parameter.parameterName}}%</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <h3>最小降雨機率</h3>
-                            <div v-for="MinT in showData.MinT" class="my-5">
-                                <p>{{MinT.startTime}}</p>
-                                <p>{{MinT.endTime}}</p>
-                                <h4>{{MinT.parameter.parameterName}}{{MinT.parameter.parameterUnit}}</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <h3>最大降雨機率</h3>
-                            <div v-for="MaxT in showData.MaxT" class="my-5">
-                                <p>{{MaxT.startTime}}</p>
-                                <p>{{MaxT.endTime}}</p>
-                                <h4>{{MaxT.parameter.parameterName}}{{MaxT.parameter.parameterUnit}}</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-2">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
                             <h3>舒適度</h3>
-                            <div v-for="CI in showData.CI" class="my-5">
-                                <p>{{CI.startTime}}</p>
-                                <p>{{CI.endTime}}</p>
-                                <h4>{{CI.parameter.parameterName}}</h4>
+                            <div class="my-5">
+                                <h4>{{hostData.CI}}</h4>
                             </div>
                         </div>
 
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                            <h3>最低溫度</h3>
+                            <div class="my-5">
+                                <h4>{{hostData.MinT}}</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                            <h3>最高溫度</h3>
+                            <div class="my-5">
+                                <h4>{{hostData.MaxT}}</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+                            <h3>降雨機率</h3>
+                            <div class="my-5">
+                                <h4>{{hostData.PoP}}</h4>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
 
-            <div id="taiwanMap" class="row col-5">
+            <div id="taiwanMap" class="row col-12 col-md-5">
+                <img id="weatherImg" :src="hostimg" alt="">
                 <!-- 台灣地圖svg -->
                 <svg version="1.2" viewBox="0 0 296.73999 339.72" stroke-linecap="round" stroke-linejoin="round"
                     id="svg920">
