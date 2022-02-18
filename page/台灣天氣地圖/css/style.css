@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background         : url(/images/beach.jpg);
+    background         : url(../images/beach.jpg);
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: top center;
