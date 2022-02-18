@@ -159,7 +159,7 @@ let app = new Vue({
             parameterValue: 0       //天氣代號
 
         },
-        hostimg: '',
+        hostimg: '',            //天氣小圖示src
         showState: false,       //按下按鈕才秀出資料
 
 
@@ -204,24 +204,20 @@ let app = new Vue({
         setMap: function (e) {
             //選單更新時使用目前縣市的中英文名子更新資料
 
-
-
             this.hostMap(this.mapState.zh, this.mapState.en)
-
         },
         hostMap: function (zh, en) {
-            // console.log($event);
+            //用於解析用戶點選的縣市的資料，然後將其實現在畫面上。
+
             //設定中英文名狀態幫助時間選單更新資料
             this.mapState.zh = zh;
             this.mapState.en = en
 
-            //用於解析用戶點選的縣市的資料，然後將其實現在畫面上。
             let vm = this;
             let host = this.hostData;
 
             //城市標題
             host.city = zh;
-
             // console.log(this.dataDescription.location);
 
             this.dataDescription.location.forEach(function (e) {
@@ -230,7 +226,7 @@ let app = new Vue({
                     e.weatherElement.forEach(function (e) {
                         switch (e.elementName) {
                             case 'Wx':
-                                console.log(e.time[vm.chooseTime]);
+                                // console.log(e.time[vm.chooseTime]);
                                 vm.hostData.Wx = e.time[vm.chooseTime].parameter.parameterName;
                                 vm.hostData.parameterValue = parseInt(e.time[vm.chooseTime].parameter.parameterValue, 10);    //氣候代號
                                 break;
@@ -262,11 +258,6 @@ let app = new Vue({
             //取的天氣代號
             const int = this.hostData.parameterValue;
 
-            document.querySelectorAll('path').forEach(event => {
-                event.style = '';
-            });
-            document.querySelector(`#${en}`).style = 'fill : var(--color-gold); transform: translate(-5px, -5px);';
-
             if (int === 1) {
                 this.hostimg = 'images/smallimg/sun.png'
             } else if (int > 1 && int <= 7) {
@@ -276,7 +267,11 @@ let app = new Vue({
             } else {
                 this.hostimg = 'images/smallimg/storm.png'
             }
-            console.log(int);
+
+            document.querySelectorAll('path').forEach(event => {
+                event.style = '';
+            });
+            document.querySelector(`#${en}`).style = 'fill : var(--color-gold); transform: translate(-5px, -5px);';
 
             this.showState = true;
         }

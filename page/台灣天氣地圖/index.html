@@ -62,24 +62,27 @@
 
                             <div v-if="area === '1'" class="d-flex flex-wrap justify-content-center">
                                 <button v-for="northern in citys.northerns"
-                                    @click="hostMap(northern.zhName, northern.enName)"
+                                    @click="hostMap(northern.zhName, northern.enName)" :key="northern.id"
                                     class="col-4 col-md-3 col-lg-2 col-xl-1">{{northern.zhName}}</button>
                             </div>
                             <div v-else-if="area === '2'" class="d-flex flex-wrap justify-content-center">
                                 <button v-for="central in citys.centrals"
-                                    @click="hostMap(central.zhName, central.enName)"
+                                    @click="hostMap(central.zhName, central.enName)" :key="central.id"
                                     class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{central.zhName}}</button>
                             </div>
                             <div v-else-if="area === '3'" class="d-flex flex-wrap justify-content-center">
                                 <button v-for="south in citys.souths" @click="hostMap(south.zhName, south.enName)"
+                                    :key="south.id"
                                     class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{south.zhName}}</button>
                             </div>
                             <div v-else-if="area === '4'" class="d-flex flex-wrap justify-content-center">
                                 <button v-for="east in citys.easts" @click="hostMap(east.zhName, east.enName)"
+                                    :key="east.id"
                                     class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{east.zhName}}</button>
                             </div>
                             <div v-else-if="area === '5'" class="d-flex flex-wrap justify-content-center">
                                 <button v-for="island in citys.islands" @click="hostMap(island.zhName, island.enName)"
+                                    :key="island.id"
                                     class="col-1 col-4 col-md-3 col-lg-2 col-xl-1">{{island.zhName}}</button>
                             </div>
                             <!-- <div>

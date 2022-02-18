@@ -96,10 +96,10 @@ let app1 = new Vue({
             location.href = 'page/台灣天氣地圖/index.html';
         },
         changeAbouMyPage: function () {
-            location.href = 'myResume/index.html';
+            location.href = 'page/myResume/index.html';
         },
         changeVuePage: function () {
-            location.href = 'vue練習/index.html';
+            location.href = 'page/vue練習/index.html';
         },
 
     },
