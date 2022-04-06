@@ -1,6 +1,5 @@
-h1 {
-    font-weight: bold;
-    font-size  : 4em;
+[v-cloak] {
+    display: none;
 }
 
 body {
@@ -12,6 +11,11 @@ body {
 header {
     position: relative;
 
+}
+
+h1 {
+    font-weight: bold;
+    font-size  : 4em;
 }
 
 .container {
@@ -81,7 +85,7 @@ header {
 .buttonBox:hover {
     color     : rgb(28, 41, 83);
     box-shadow: inset 389px 0px 0px 0px rgb(71, 206, 127);
-    z-index: 2;
+    z-index   : 2;
 }
 
 .buttonBox div {
@@ -93,7 +97,8 @@ header {
 .buttonBox>h3 {
     z-index: -99;
 }
-    .buttonBox>h2:hover,
+
+.buttonBox>h2:hover,
 .buttonBox>h3:hover {
     box-shadow: none;
 }

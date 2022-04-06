@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": { //當儲存時執行
+        "source.fixAll.eslint": true //調用格式檢查方法 指定eslint
+    },
+    "eslint.validate": [ //eslint 支援以下格式檔案
+        "javascript",
+        "vue",
+    ],
+}

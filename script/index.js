@@ -49,57 +49,57 @@ let app1 = new Vue({
                 setTimeout(function () {
                     //重新觸發
                     vm.myGitH1();
-                }, parseInt(Math.random() * 200));
+                }, parseInt(Math.random() * 0));
             } else if (count === arrTitle.length) {
 
                 this.htmlContentAni = "animation: buttonBoxOpacity 1.5s cubic-bezier(0.42, 0, 0.34, 0.96) forwards; ";
 
             }
         },
-        submitLogin: function (e) {
-            const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
-            // url = `http://localhost:5000/?gitUser=orange`;
+        // submitLogin: function (e) {
+        //     const url = `https://hidden-escarpment-17052.herokuapp.com/?gitUser=orange`
+        //     // url = `http://localhost:5000/?gitUser=orange`;
 
-            this.axiosResData = '<div>請稍後...</div>'
-            this.axiosResDataStyle = ''
+        //     this.axiosResData = '<div>請稍後...</div>'
+        //     this.axiosResDataStyle = ''
 
-            let formData = new FormData();
-            formData.append('username', e.target.username.value);
-            formData.append('password', e.target.password.value);
-
-
-            axios({
-                method: 'POST',
-                url: url,
-                headers: { "Content-Type": "multipart/form-data" },
-                data: formData
-            }).
-                then((e) => {
-                    if (e.request.responseURL !== url) {
-                        //如果回傳網址不等於原本傳出去的網址的話。
-                        location.href = e.request.responseURL;
-                    } else {
-
-                        this.axiosResData = e.data;
-                        this.axiosResDataStyle = "color:red"
-                    }
-                    console.log(e);
-                    console.log('回傳網址' + e.request.responseURL);
-                }).
-                catch((err) => {
-                    throw new Error(err);
-                })
+        //     let formData = new FormData();
+        //     formData.append('username', e.target.username.value);
+        //     formData.append('password', e.target.password.value);
 
 
-        },
+        //     axios({
+        //         method: 'POST',
+        //         url: url,
+        //         headers: { "Content-Type": "multipart/form-data" },
+        //         data: formData
+        //     }).
+        //         then((e) => {
+        //             if (e.request.responseURL !== url) {
+        //                 //如果回傳網址不等於原本傳出去的網址的話。
+        //                 location.href = e.request.responseURL;
+        //             } else {
+
+        //                 this.axiosResData = e.data;
+        //                 this.axiosResDataStyle = "color:red"
+        //             }
+        //             console.log(e);
+        //             console.log('回傳網址' + e.request.responseURL);
+        //         }).
+        //         catch((err) => {
+        //             throw new Error(err);
+        //         })
+
+
+        // },
         weatherForecast: function () {
             location.href = 'page/台灣天氣地圖/index.html';
         },
         changeAbouMyPage: function () {
             location.href = 'page/myResume/index.html';
         },
-        changeVuePage: function () {
-            location.href = 'page/vue練習/index.html';
+        changeTodolist: function () {
+            location.href = 'page/todolist/index.html';
         },
 
     },
