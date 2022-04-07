@@ -35,9 +35,9 @@ h1 {
 
 #gitIcon .gitCat {
     position: fixed;
-    left    : calc(50% - (50vw - 50vh - 5%));
-    top     : calc(50% - (50vw - 50vh - 10%));
-    width   : calc(100vw - 100vh - 10%);
+    left    : calc(50% - 185px);
+    top     : calc(50% - 185px);
+    width   : 370px;
 
 
     opacity: 0;
@@ -105,8 +105,8 @@ h1 {
 
 .buttonBox img {
 
-    width : 100px;
-    height: 87px;
+    width    : 100px;
+    /* height: 87px; */
 }
 
 @keyframes buttonBoxOpacity {
@@ -138,4 +138,16 @@ h1 {
     background: none;
     border    : none;
     box-shadow: none;
+}
+
+@media (min-width: 1440px) {
+    #gitIcon .gitCat {
+        position: fixed;
+        left    : calc(50% - (50vw - 50vh - 5%));
+        top     : calc(50% - (50vw - 50vh - 10%));
+        width   : calc(100vw - 100vh - 10%);
+
+
+        opacity: 0;
+    }
 }

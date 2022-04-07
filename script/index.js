@@ -51,9 +51,11 @@ let app1 = new Vue({
                     vm.myGitH1();
                 }, parseInt(Math.random() * 0));
             } else if (count === arrTitle.length) {
-
+                let vm = this;
                 this.htmlContentAni = "animation: buttonBoxOpacity 1.5s cubic-bezier(0.42, 0, 0.34, 0.96) forwards; ";
-
+                setTimeout(function () {
+                    vm.htmlContentAni = 'opacity: 1; width: 29.5%;'
+                }, 1500)
             }
         },
         // submitLogin: function (e) {
