@@ -1,3 +1,4 @@
+
 const data = {
 
     // !主資料
@@ -566,7 +567,6 @@ app.component('article-box', {
     },
     methods: {
         changeArticleState: function (e) { // 開啟全文章
-            console.log(this.articleData);
             const title = this.articleDatas.title;
             const content = this.articleDatas.content;
             const setDate = this.articleDatas.setDate;

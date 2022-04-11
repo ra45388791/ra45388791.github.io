@@ -196,6 +196,7 @@ let app = new Vue({
                     // console.log(vm.dataDescription.times);
                 });
 
+
         })
 
 
@@ -280,3 +281,8 @@ let app = new Vue({
 
     }
 });
+
+const storageKey = 'asd'
+
+const checkUser = Boolean(localStorage.getItem(storageKey))
+console.log(checkUser);
